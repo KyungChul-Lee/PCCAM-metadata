@@ -6,7 +6,7 @@
   <WorkingFolder>PCCAM</WorkingFolder>
   <HelpText>도움말</HelpText>
   <HelpWebsiteLink>https://doc.pccam.site</HelpWebsiteLink>
-  <OfflineActivationReadmeFileText>Use generated (.req) file and your license file (.lic) at Offline Activation web server https://www.activationservice.net to perform the activation and get activated file (.act) . For more information, see https://doc.pccam.site .  </OfflineActivationReadmeFileText>
+  <OfflineActivationReadmeFileText>라이선스 활성화 서버 https://www.activationservice.net 에서 생성된 라이선스 요청 파일(.req)과 라이선스 파일(.lic)로 라이선스를 활성화하고, 활성화된 라이선스 파일(.act)을 가져오기. 상세내용은 https://doc.pccam.site 를 참고</OfflineActivationReadmeFileText>
 
   <AppDefaults>
     <AllowMultipleCamerasMode>true</AllowMultipleCamerasMode>
@@ -87,9 +87,9 @@
     <UserNameTooltip>아이디</UserNameTooltip>
     <PasswordTooltip>비밀번호</PasswordTooltip>
     <StartText>시작</StartText>
-    <StartTooltip>카메라 시작</StartTooltip>
+    <StartTooltip>카메라 시작하기</StartTooltip>
     <StopText>중단</StopText>
-    <StopTooltip>카메라 중단</StopTooltip>
+    <StopTooltip>카메라 중단하기</StopTooltip>
     <StartedCamerasText>카메라 시작됨</StartedCamerasText>
     <NameColumnText>카메라명</NameColumnText>
     <PortColumnText>포트</PortColumnText>
@@ -97,11 +97,11 @@
     <InfoColumnText>정보</InfoColumnText>
     <OnlineText>온라인</OnlineText>
     <OfflineText>오프라인</OfflineText>
-    <DetailsButtonTooltip>카메라 세부사항</DetailsButtonTooltip>
+    <DetailsButtonTooltip>카메라 상세조회</DetailsButtonTooltip>
     <PreventIdleText>절전모드 방지</PreventIdleText>
-    <PreventIdleTooltip>카메라가 시작된 동안 절전모드로 전환되지 않도록 방지</PreventIdleTooltip>
+    <PreventIdleTooltip>카메라가 시작된 동안은 절전모드로 전환되지 않도록 함</PreventIdleTooltip>
 
-    <-- Menu not confirmed -->
+<!-- Menu not confirmed -->
     <EnableEventsText>Enable ONVIF events</EnableEventsText>
     <EnableEventsTooltip>Produce ONVIF monion events when mouse or keyboard used</EnableEventsTooltip>
     <BandwidthLowText>Bandwidth is too low</BandwidthLowText>
@@ -111,13 +111,13 @@
 
     <RdpSafeDisconnectText>Safely close RDP</RdpSafeDisconnectText>
     <RdpSafeDisconnectTooltip>Disconnect the current RDP session and keep live streaming</RdpSafeDisconnectTooltip>
-    <-- End -->
+<!-- End -->
 
 
   </CameraSettings>
   <VideoAudioSettings>
     <Name>비디오 &amp; 오디오 설정</Name>
-    <VideoAudioSettingsText>Video &amp; Audio Settings</VideoAudioSettingsText>
+    <VideoAudioSettingsText>비디오 &amp; 오디오 설정</VideoAudioSettingsText>
     <StopCameraWarningText>Stop the camera before editing Video &amp; Audio settings</StopCameraWarningText>
     <TypePropertyText>Type:</TypePropertyText>
     <TypePropertyTooltip>Input source type</TypePropertyTooltip>
@@ -256,42 +256,44 @@
     <ApplyText>Apply</ApplyText>
     <ApplyTooltip>Apply new password</ApplyTooltip>
   </AppPassword>
+
   <LicenseInformation>
     <Name>라이선스 정보</Name>
-    <LicenseText>License:</LicenseText>
-    <TrialText>Trial</TrialText>
-    <CommercialText>Commercial</CommercialText>
-    <LicenseSerialTooltip>Serial number</LicenseSerialTooltip>
-    <LicensePeriodText>License period:</LicensePeriodText>
-    <DaysText>Days</DaysText>
-    <ActivationText>Activation:</ActivationText>
-    <RequiredText>Required</RequiredText>
-    <RequiredTooltip>The license must be activated</RequiredTooltip>
-    <CompletedText>Completed</CompletedText>
-    <CompletedTooltip>Activated</CompletedTooltip>
-    <ExpiredText>(EXPIRED)</ExpiredText>
-    <ExpiredTooltip>The License is expired</ExpiredTooltip>
-    <CorruptedText>(Corrupted)</CorruptedText>
-    <CorruptedTooltip>The License is corrupted. Please delete it and import again</CorruptedTooltip>
-    <DeviceIdTooltip>Device Id</DeviceIdTooltip>
-    <ValidFromText>Valid from</ValidFromText>
-    <ValidTillText>until</ValidTillText>
-    <ImportButtonText>Import</ImportButtonText>
-    <ImportButtonTooltip>Import the license</ImportButtonTooltip>
-    <ActivateButtonText>Activate</ActivateButtonText>
-    <ActivateButtonTooltip>Activate the license</ActivateButtonTooltip>
-    <DeleteButtonText>Delete License</DeleteButtonText>
-    <DeleteButtonTooltip>Delete the license</DeleteButtonTooltip>
+    <LicenseText>라이선스:</LicenseText>
+    <TrialText>시험용</TrialText>
+    <CommercialText>상업용</CommercialText>
+    <LicenseSerialTooltip>시리얼 번호</LicenseSerialTooltip>
+    <LicensePeriodText>라이선스 기한:</LicensePeriodText>
+    <DaysText>일</DaysText>
+    <ActivationText>활성화:</ActivationText>
+    <RequiredText>필요</RequiredText>
+    <RequiredTooltip>라이선스가 활성화되어야 함</RequiredTooltip>
+    <CompletedText>완료</CompletedText>
+    <CompletedTooltip>활성화됨</CompletedTooltip>
+    <ExpiredText>(만료)</ExpiredText>
+    <ExpiredTooltip>라이선스 사용기한이 끝남</ExpiredTooltip>
+    <CorruptedText>(손상)</CorruptedText>
+    <CorruptedTooltip>라이선스가 손상되어 삭제후 다시 가져와야 함</CorruptedTooltip>
+    <DeviceIdTooltip>PC 아이디</DeviceIdTooltip>
+    <ValidFromText>유효기간:</ValidFromText>
+    <ValidTillText> ~ </ValidTillText>
+    <ImportButtonText>가져오기</ImportButtonText>
+    <ImportButtonTooltip>라이선스 가져오기</ImportButtonTooltip>
+    <ActivateButtonText>활성화</ActivateButtonText>
+    <ActivateButtonTooltip>라이선스 활성화하기</ActivateButtonTooltip>
+    <DeleteButtonText>삭제</DeleteButtonText>
+    <DeleteButtonTooltip>라이선스 삭제하기</DeleteButtonTooltip>
 
-    <ImportOptionsText>Import from</ImportOptionsText>
-    <UseLicenseFileText>License file (.lic)</UseLicenseFileText>
-    <UseLicenseFileTooltip>Import from a License file (the Internet is required for Activation)</UseLicenseFileTooltip>
-    <BrowseButtonText>...</BrowseButtonText>
-    <BrowseButtonTooltip>Browse a file</BrowseButtonTooltip>
-    <UseOfflineActivationText>Offline Activated License file (.act)</UseOfflineActivationText>
-    <UseOfflineActivationTooltip>Import from an Offline activated License file</UseOfflineActivationTooltip>
-    <CreateActivationRequestButtonText>Create activation request</CreateActivationRequestButtonText>
+    <ImportOptionsText>라이선스 가져오기</ImportOptionsText>
+    <UseLicenseFileText>라이선스 파일(.lic)</UseLicenseFileText>
+    <UseLicenseFileTooltip>인터넷에서 활성화할 라이선스 파일 가져오기</UseLicenseFileTooltip>
+    <BrowseButtonText>찾기</BrowseButtonText>
+    <BrowseButtonTooltip>파일 찾기</BrowseButtonTooltip>
+    <UseOfflineActivationText>활성화 라이선스 파일(.act)</UseOfflineActivationText>
+    <UseOfflineActivationTooltip>활성화된 라이선스 파일 가져오기</UseOfflineActivationTooltip>
+    <CreateActivationRequestButtonText>활성화 요청 파일(.req) 생성</CreateActivationRequestButtonText>
 
+<!-- Menu not confirmed -->
     <UseLicenseServerText>Local License server</UseLicenseServerText>
     <UseLicenseServerTooltip>Import from a Local License server</UseLicenseServerTooltip>
     <LicenseServerUrlTooltip>Specify Local License server URL (E.g http://192.168.1.2:8088 )</LicenseServerUrlTooltip>
@@ -300,14 +302,17 @@
     <WaitingForLicenseServerText>Waiting for a License server..</WaitingForLicenseServerText>
     <LicenseServerConnectionErrorText>Connection error, reconnecting...</LicenseServerConnectionErrorText>
     <LicenseServerPendingText>Connected. Pending license assignment</LicenseServerPendingText>
+<!-- END -->
   </LicenseInformation>
+
   <About>
     <Name>PCCAM 정보</Name>
-    <VersionText>Version</VersionText>
+    <VersionText>버전</VersionText>
     <WebsiteLink>https://www.pccam.site</WebsiteLink>
-    <ThirdPartySoftwareText>*PCCAM includes computer software supplied by third-parties.</ThirdPartySoftwareText>
-    <DetailsText>For details check</DetailsText>
+    <ThirdPartySoftwareText>PCCAM은 3자가 제공하는 소프트웨어를 포함한다.</ThirdPartySoftwareText>
+    <DetailsText>상세조회:</DetailsText>
   </About>
+
   <Unblock>
     <Name>Unlock</Name>
     <PasswordTooltip>Unlock password</PasswordTooltip>
@@ -443,16 +448,17 @@
     <VideoSourceTokenText>API token</VideoSourceTokenText>
     <VideoSourceTokenTooltip>Token parameter, needed for the API call</VideoSourceTokenTooltip>
   </ConfigureMotion>
+
   <Messages>
     <CantStartCamera>Cannot start camera. Check log file for more details</CantStartCamera>
     <CriticalError>PCCAM encountered a critical exception. Please restart the application. We are sorry for the inconvenience</CriticalError>
-    <ConfirmActivation>Activation will tie the license to this PC. Continue?</ConfirmActivation>
-    <ActivationCompleted>The license has been activated</ActivationCompleted>
+    <ConfirmActivation>활성화하면 라이선스가 이 PC와 연결됨. 동의함?</ConfirmActivation>
+    <ActivationCompleted>라이선스 활성화됨</ActivationCompleted>
     <NewPasswordNotConfirmed>New password and confirm password are not same</NewPasswordNotConfirmed>
     <PasswordChanged>The password was changed</PasswordChanged>
     <WrongPassword>Wrong password, please try again</WrongPassword>
     <ConfirmDeleteLicense>Are you sure you want to delete current License?</ConfirmDeleteLicense>
-    <LicenseWasImported>The license has been imported</LicenseWasImported>
+    <LicenseWasImported>라이선스 가져옮</LicenseWasImported>
     <CantImportLicense>Cannot import lic file:</CantImportLicense>
     <OtherInstanceStarted>Another instance of the application is already running.</OtherInstanceStarted>
     <UnlockRequired>Unlock the application first</UnlockRequired>
