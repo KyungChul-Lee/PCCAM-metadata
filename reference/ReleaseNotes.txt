@@ -1,0 +1,280 @@
+﻿4.5.3
+Remote deployment option "LicServer" added
+Disabling recently introduced behaviour "Aggregating SPS/PPS NAL units into STAP-A packets" because it causes choppy/invalid playback or livestream issues in some rare NVR/VMS consumers
+Fixes:
+Not possible to exit the Options menu if the application was locked by password
+Tray icon is showing for a short time even if Hidden mode was enabled
+
+4.5.2
+GOP range was extended to 1..240
+
+4.5.1
+More detailed error messages in case of unexpected app shutdown
+
+4.5.0
+Improving of Picture in Picture media sources. Now it additionally supports RTSP, HTTP and Screen Area video sources
+Expose REST API to trigger Motion events 
+Motion events could be triggered for all kind of media sources
+Allow direct editing of X/Y position and size for Screen Area sources
+Fixes:
+On some environments the Application doesn't start with the error: Unable to load DLL 'GstRtspServer': The specified procedure could not be found
+Webcams with Resolutions higher than Full HD might not work correctly
+
+4.4.4
+Fixes:
+Periodic crashes if Windows language is set to some of East Asian languages
+
+4.4.3
+Color picker for overlay text and timestamp
+ONVIF Motion event can be configured on a specific keyboard key
+Screen Area selection tool allows to select areas with resolutions starting from 320x200
+Many improvements in text/timestamp overlay
+Fixes:
+"Sequence contains no elements" error message on "Preview" and "Test RTSP" functionality for medias with resolution smaller than 640*480
+Incorrect dimensions and coordinates in "Screen Area" medias for Portrait oriented screens
+"Screen Area" medias become attached to the incorrect display after the application restart
+Broken video output if Rotation is used in "Medium Performance" streams
+Low fps in External http sources 
+
+
+
+4.4.2
+High Performance live controller is supporting Audio now (Audio source could be attached to high performance hardware accelerated streams)
+"Preview" profile button added
+Remote deployment option "SetHiddenMode" added
+3th party media dependencies were updated
+Microsoft Visual C++ Redistributable packeges get upated to the latest
+Fixes:
+Black picture is streamed when resolution got changed while HW live controller is in use
+Other minor bug fixes
+
+4.4.1
+Fixes:
+Add missed plugins
+
+4.4.0
+Features:
+H265 Hardware accelerated encoding option
+Remote deployment is now possible with command line arguments: CreateReq , ImportAct , ImportLic , SetAppPassword , SetCameraUsername , SetCameraPassword
+Improvements in working with webcams - increased FPS,resolution,etc
+Major Live streaming improvements. Resolving quality issue on High resolution/High FPS streaming
+Popup alerts with errors messages would not appear if Hidden mode is enabled
+"Validate Connection" and "Test RTSP" commands now work with H264 and H265 medias
+Maximum supported resolution is increased to 4K (4096*2160). Require enabling in config file
+Refactoring in RTSP server code
+Fixes:
+Correct handling of possible errors during "Copy to Clipboard" command
+
+4.3.0
+Support for 2k and 4k resolutions could be enabled in the config file
+Webcam urls are static now and do not include webcam device name
+Fixes:
+Better processing of SPS/PPS data in h264 streams
+
+4.2.2
+Code refactoring
+Fixes:
+Audio noise in some NVR/VMS on low fps streaming
+
+4.2.1
+Fixes:
+Correcting RTSP url for the profile with static path 
+Correcting assembly version
+Fixing bug when Media doesn't start if Mic device was disconnected
+
+4.2.0
+Features:
+Support of Picture in Picture media sources
+Maintain streaming when RDP session get disconnected / connected
+Icons indication of High performance, Medium performance and Low performance streams
+Ctrl + Alt + D combination could be disabled in Options menu
+Compatibility mode for TVT NVR /ED NVR/ Easterncctv
+Automatic restart of streaming sessions when Display settings get changed
+Fixes:
+Authentication issue with Pelco VideoXpert VMS
+
+4.1.0
+Hidden mode
+Fixes
+Hardware acceleration not able to start sometimes
+
+4.0.4
+Fixes:
+A black picture instead desktop video stream on some GPU models and some VMS/NVR
+Motion events not working in some versions of Milestone XProtect
+Incorrect Log messages while monitoring incoming live connections
+Fallback to MF software encoder is disabled by default if HW acceleration is not possible
+Improved logs
+
+
+4.0.3
+Fixes:
+Onvif username/password reverts to defaults after the application restart
+Incorrect behavior of App Password functionality after "Factory Reset"
+Options menu still accessible when the App is locked by password but the camera is not started
+Motion events not working in Milestone XProtect
+ONVIF Camera name is not correct in some VMS
+
+4.0.2
+Fixes:
+Incorrect indication of Connected clients
+ONVIF implementation of Motion events 
+
+4.0.1
+Realtime indication of Connected Clients
+Fixes:
+Icon for HW accelerated streams
+Updated error message for Windows Server
+Some width/height combinations of Screen area sources broke streaming
+MF software encoder is now not used on environments with no HW encoders available
+
+
+4.0.0
+Features:
+Full HW capture and encoding on Intel, NVIDIA and AMD platforms. Significant performance boost
+Manual configuration for Video and Audio settings directly in the App User interface
+60 FPS stream support for High Performance HW capture (h264)
+Restream external RTSP streams(H264 and JPEG) as ONVIF - experimental
+Restream external HTTP streams(H264 and JPEG) as ONVIF - experimental
+exacqVision VMS support
+ONVIF motion events
+Video Overlay (timestamp, mouse, custom text)
+AAC audio support
+Audio only streams (no video)
+Option to prevent Windows getting into Idle/Sleep mode while the App is launched
+Low Bandwidth issue indication on the User interface
+Runtime info about the launched streams (RTSP urls, encoding parameters, etc)
+Fixes:
+Incorrect streaming coordinates for Screen area sources when Windows DPI is not default
+
+
+3.3.4
+Fixes:
+Issues with streaming webcams that have special characters in device name
+Decrease bitrate in Auto Mode
+Optimization for h264 encoder parameters
+
+3.3.3
+Fixes:
+Incorrect Onvif Timezone response
+Fps drop on high resolutions
+UI elements display fixes on increased scale setting in Windows
+
+3.3.2
+Fixes:
+"Access denied" error if running the application with non admin user on Win7
+
+3.3.1
+Features:
+Open the App Window by keyboard shortcut Ctr+Alt+d
+Fixes:
+Improved error handling on App startup
+Fix for the error with password Lock/Unlock functionality
+
+3.3.0
+Features:
+"Local License server" activation method
+
+3.2.0
+Features:
+- Capture screen area
+- Test live video screen displays max possible FPS of a media source
+- Screen sources includes additional MJPEG profiles
+- User can choose FPS control option - By NVR or Setup FPS value manually
+Fixes:
+- Media sources configuration sometimes not saved on Exit
+
+3.1.2
+Fixes:
+- Regression bug in ONVIF protocol
+
+3.1.1
+Fixes:
+- Fix for the error "The program can't start because api-ms-win-shcore-scaling-l1-1-1.dll is missing from your computer"
+- Compatibility mode for buggy ONVIF NVR/VMS clients
+
+3.1.0
+Features:
+- Offline Activation
+
+3.0.0
+Features:
+- HW encoding (Intel® Quick Sync) for Intel platforms
+- DShow for Webcams. Each webcam could be configured for using either - Kernel Streaming or DirectShow
+- Clock overlay
+- Improved Mic recognition. More microphones are now supported
+- Video source could be disabled via application interface.
+- More settings could now be configured on Video & Audio Settings tab
+- Options tab for advanced configuration
+- The ability to Test video and audio settings before starting the camera 
+- Software now use Microsoft Visual C ++ 2015 Redistributable Package instead of Microsoft Visual C ++ 2013 Redistributable Package
+- Max fps increased for Screens sources. Now it's 30 fps instead of the previous 20.
+- Changing Resolution for WebCams is now supported
+- Silent installation mode with "/q" switch. To check all options - run with "/?"
+- New Installer
+Fixes:
+- IP Addresses list is empty and Camera can't start if the during Windows boot time the Application started early then Network adapter being initialized
+- Incorrect RTSP port allocation if the default port 554 is busy
+- Firewall outbound rule is missed
+- Minor updates in ONVIF protocol implementation
+- App loading delay with weak network connection
+
+2.2.3
+Fixes:
+Fix for "Access denied" error due to improper URL Reservations for Onvif servies on some PCs
+Now Installer will allow to continue the installation in case of a Windows error " 1001 'There are no more endpoints available from the endpoint mapper'"
+Correct handling for SSL certificate error on PCs with outdated root SSL certificates
+
+2.2.2
+Fixes:
+- In some cases encoder configuration didn't get saved after PC restart.
+
+2.2.1
+Fixes:
+- WebCam video is now encoded with H264 Baseline profile instead of H264 High 4:2:2 
+- Fix for a regression bug "Can't modify" error while switching encoder from H264 to Jpeg
+
+
+2.2.0
+Features:
+- GOP size is now could be configured via ONVIF cient
+- Enable/Disable FullHD for H264 could be done via User Interface
+- Unistall process is now completely removes application data files
+Fixes:
+- "Multiple headers with name 'Action'" error for Turkish region setting
+- "Input string was not in a correct format" error with VIVOTEK NVR
+
+2.1.0
+Features:
+- Auto and manual video rotation is supported
+- There is an option to select "Default Microphone" for audio source
+- FullHD resolution for H264 encoder could be enabled in config file (Set EnableH264ResolutionsRestriction to False)
+- Dynamic assigning of free RTSP port (config file can restore old behavior by setting DynamicallyAssignRtspPort to False)
+
+2.0.2
+Fixes:
+- Portrait screens are supported now
+- Encoder configuration set to NULL in some cases. That produced issues with video streaming for some media profiles.
+- Application doesn't save video configurations after exiting
+
+
+2.0.1
+Fixes:
+- Critical error on the early start of application caused a theme loading error and produced black screen message boxes
+
+2.0.0
+Features:
+- Theming support
+- Configurable Scopes
+Fixes:
+- "object reference not set to an instance of an object" error
+- Avigilon VMS can now rename virtual camera device
+- Audio encoder replaced  (PCMA replaced by PCMU). It fixed audio issues with many VMS
+
+1.6.2:
+Fixes:
+- Periodic Video error in Avigilon VMS
+- App crash in some Lenovo Notebooks
+- Rare critical error during app startup right after installation
+- Rare "object reference not set to an instance of an object" error
+- Onvif fixes for audio commands
