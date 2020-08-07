@@ -39,8 +39,8 @@
 
   <Options>
     <Name>옵션</Name>
-    <ReturnText><![CDATA[나가기]]></ReturnText>
-    <ReturnTooltip>나가기</ReturnTooltip>
+    <ReturnText>나가기</ReturnText>
+    <ReturnTooltip>옵션에서 나가기</ReturnTooltip>
     <DynamicRtspPortText>Auto select RTSP Port</DynamicRtspPortText>
     <DynamicRtspPortTooltip>Automatically select free port for RTSP communication</DynamicRtspPortTooltip>
     <RtspPortText>Static RTSP Port</RtspPortText>
@@ -83,23 +83,23 @@
     <MultipleCamerasText>다중 카메라</MultipleCamerasText>
     <MultipleCamerasTooltip>다중 카메라 모드</MultipleCamerasTooltip>
     <OnvifUserText>ONVIF 계정</OnvifUserText>
-    <OnvifUserTooltip>ONVIF 아이디 &amp; 비밀번호</OnvifUserTooltip>
+    <OnvifUserTooltip>ONVIF 아이디 및 비밀번호</OnvifUserTooltip>
     <UserNameTooltip>아이디</UserNameTooltip>
     <PasswordTooltip>비밀번호</PasswordTooltip>
     <StartText>시작</StartText>
     <StartTooltip>카메라 시작하기</StartTooltip>
-    <StopText>중단</StopText>
-    <StopTooltip>카메라 중단하기</StopTooltip>
+    <StopText>중지</StopText>
+    <StopTooltip>카메라 중지하기</StopTooltip>
     <StartedCamerasText>카메라 시작됨</StartedCamerasText>
-    <NameColumnText>카메라명</NameColumnText>
+    <NameColumnText>명칭</NameColumnText>
     <PortColumnText>포트</PortColumnText>
     <VideoSourcesColumnText>미디어 출처</VideoSourcesColumnText>
     <InfoColumnText>정보</InfoColumnText>
     <OnlineText>온라인</OnlineText>
     <OfflineText>오프라인</OfflineText>
     <DetailsButtonTooltip>카메라 상세조회</DetailsButtonTooltip>
-    <PreventIdleText>절전모드 방지</PreventIdleText>
-    <PreventIdleTooltip>카메라가 시작된 동안은 절전모드로 전환되지 않도록 함</PreventIdleTooltip>
+    <PreventIdleText>절전 모드 방지</PreventIdleText>
+    <PreventIdleTooltip>카메라가 시작된 동안은 절전 모드로 전환되지 않도록 함</PreventIdleTooltip>
 
 <!-- Menu not confirmed -->
     <EnableEventsText>Enable ONVIF events</EnableEventsText>
@@ -116,29 +116,29 @@
 
   </CameraSettings>
   <VideoAudioSettings>
-    <Name>비디오 &amp; 오디오 설정</Name>
-    <VideoAudioSettingsText>비디오 &amp; 오디오 설정</VideoAudioSettingsText>
-    <StopCameraWarningText>Stop the camera before editing Video &amp; Audio settings</StopCameraWarningText>
-    <TypePropertyText>Type:</TypePropertyText>
-    <TypePropertyTooltip>Input source type</TypePropertyTooltip>
-    <RotatePropertyText>Rotation:</RotatePropertyText>
-    <RotatePropertyTooltip>Rotate video output</RotatePropertyTooltip>
-    <IsEnabledText>Enable:</IsEnabledText>
-    <IsEnabledTooltip>Enable or Disable input source</IsEnabledTooltip>
-    <AudioSourcePropertyText>Audio:</AudioSourcePropertyText>
-    <AudioSourcePropertyTooltip>Select Audio input source</AudioSourcePropertyTooltip>
-    <AutoModeText>Auto mode</AutoModeText>
-    <AutoModeTooltip>Automatically adjust encoding Bitrate and GOV Length</AutoModeTooltip>
-    <EnableHWEncodingText>HW Encoder</EnableHWEncodingText>
-    <EnableHWEncodingTooltip>Enable Intel® Quick Sync encoding</EnableHWEncodingTooltip>
-    <WebcamConnectionModePropertyText>Mode:</WebcamConnectionModePropertyText>
-    <WebcamConnectionModePropertyTooltip>Webcam connection mode</WebcamConnectionModePropertyTooltip>
-    <TestMediaSourceText>Test RTSP</TestMediaSourceText>
-    <TestMediaSourceTooltip>Test RTSP streaming from the input source with the current settings</TestMediaSourceTooltip>
-    <FinishTestText>Live video and audio should be displaying now. Press OK to finish</FinishTestText>
-    <AddMediaSourceTooltip>Add new Media Source</AddMediaSourceTooltip>
-    <EditMediaSourceTooltip>Edit Media Source</EditMediaSourceTooltip>
-    <RemoveMediaSourceTooltip>Remove Media Source</RemoveMediaSourceTooltip>
+    <Name>비디오 및 오디오 설정</Name>
+    <VideoAudioSettingsText>비디오 및  오디오 설정</VideoAudioSettingsText>
+    <StopCameraWarningText>비디오 및 오디오를 설정하려면 카메라를 중지해야 함</StopCameraWarningText>
+    <TypePropertyText>유형:</TypePropertyText>
+    <TypePropertyTooltip>입력된 비디오 유형</TypePropertyTooltip>
+    <RotatePropertyText>회전:</RotatePropertyText>
+    <RotatePropertyTooltip>출력될 비디오 회전</RotatePropertyTooltip>
+    <IsEnabledText>사용:</IsEnabledText>
+    <IsEnabledTooltip>미디어 출처 사용 or 사용 안 함</IsEnabledTooltip>
+    <AudioSourcePropertyText>오디오:</AudioSourcePropertyText>
+    <AudioSourcePropertyTooltip>입력될 오디오 출처 선택</AudioSourcePropertyTooltip>
+    <AutoModeText>자동 모드</AutoModeText>
+    <AutoModeTooltip>인코딩 비트레이트 및 GOV 길이 자동 조정</AutoModeTooltip>
+    <EnableHWEncodingText>HW 인코더</EnableHWEncodingText>
+    <EnableHWEncodingTooltip>Intel® Quick Sync 인코딩 사용</EnableHWEncodingTooltip>
+    <WebcamConnectionModePropertyText>모드:</WebcamConnectionModePropertyText>
+    <WebcamConnectionModePropertyTooltip>웹캠 연결 모드</WebcamConnectionModePropertyTooltip>
+    <TestMediaSourceText>RTSP 테스트</TestMediaSourceText>
+    <TestMediaSourceTooltip>현재 설정으로 미디어 출처에서 RTSP 스트리밍 테스트</TestMediaSourceTooltip>
+    <FinishTestText>지금 비디오 및 오디오가 실시간으로 보여짐. 끝내려면 OK 누름</FinishTestText>
+    <AddMediaSourceTooltip>미디어 출처 추가</AddMediaSourceTooltip>
+    <EditMediaSourceTooltip>미디어 출처 편집</EditMediaSourceTooltip>
+    <RemoveMediaSourceTooltip>미디어 출처 제거</RemoveMediaSourceTooltip>
     <FpsText>FPS control</FpsText>
     <FpsTooltip>FPS control</FpsTooltip>
     <FpsByNVRText>By NVR</FpsByNVRText>
@@ -469,7 +469,7 @@
     <FactoryResetError>Cannot reset to factory defaults</FactoryResetError>
     <NoIPAddressesDetected>Can't retreive IP addresses. The software will use PC hostname instead</NoIPAddressesDetected>
     <UniqueNameRequired>Please specify a unique name for custom Input Source. The Name '{0}' is already in use</UniqueNameRequired>
-    <ConfirmRemoveMediaSource>Media source '{0}' will be removed. Continue?</ConfirmRemoveMediaSource>
+    <ConfirmRemoveMediaSource>미디어 출처 '{0}' 제거됨. 동의함?</ConfirmRemoveMediaSource>
     <CancelProxyLicenseServerRequest>Cancel importing license from a Local License server ?</CancelProxyLicenseServerRequest>
     <CantConnectToLicenseServer>Cannot connect to the Server</CantConnectToLicenseServer>
 

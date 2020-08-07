@@ -1,0 +1,37 @@
+End-User Software License Agreement
+
+This End-User License Agreement (EULA) is a legal agreement between you (either an individual or a single entity) and the DEVELOPER of this Software.
+
+By installing or using the SOFTWARE PRODUCT, you agree to be bound by the terms of this EULA.
+If you do not agree to the terms of this EULA, do not install or use the SOFTWARE PRODUCT.
+
+SOFTWARE LICENSE
+
+The USER acknowledges that the copyright of the Software and its associated documentation are the property of the DEVELOPER.
+
+The USER may request from the DEVELOPER a time-limited (trial, demo) license to determine whether the Software suits the USER’s needs (demo period). This trial license can be used only once and only on one PC. Once the trial license has been used on the PC, this PC cannot be used for any additional trial licenses of this Software. The USER may request as many trial licenses as necessary for use on different PCs on the USER’s network. Once the USER has purchased a full commercial license, the USER has agreed that the Software suits the USER’s needs.
+
+A valid commercial license for the Software must be purchased for each Windows PC on which the Software is installed (with one exception - if the USER uses a trial license for a short demo period). The USER acknowledges that the license is bound to the PC hardware during activation process and the license cannot be transferred to another PC. The USER must purchase a new license if the USER must use the Software on a new PC. The USER may not transfer the USER’s copy of the Software to another party. Also, the USER is not permitted to sell the Software to another party without an agreement with the Developer.
+
+The USER may make a copy of this Software solely for backup or archival purposes.
+
+The USER shall not modify, translate, reverse engineer, decompile, or disassemble the Software or any part thereof or otherwise attempt to derive source code or create derivative works therefrom. The USER is not allowed to remove, alter, or destroy any proprietary, trademark, or copyright markings or notices placed upon or contained within the Software.
+
+The USER's rights under this license will terminate automatically without notice from the DEVELOPER if the USER fails to comply with any term(s) of this license. Upon termination of this license, the USER must cease all use of the Software and destroy all copies of the Software.
+
+COPYRIGHT
+
+All title and copyrights in and to the SOFTWARE PRODUCT (including, but not limited to, any images, photographs, clipart, libraries, and examples incorporated in the SOFTWARE PRODUCT), the accompanying printed materials, and any copies of the SOFTWARE PRODUCT are owned by the DEVELOPER or distributor of this Software. The SOFTWARE PRODUCT is protected by copyright laws and international treaty provisions. Therefore, the USER must treat the SOFTWARE PRODUCT like any other copyrighted material. Licensed USERS or the licensed company can use all functions, examples, templates, clipart, libraries, and symbols in the SOFTWARE PRODUCT to create new diagrams and distribute the diagrams.
+
+
+LIMITED WARRANTY
+
+
+THE USER EXPRESSLY ACKNOWLEDGES AND AGREES THAT USE OF THE SOFTWARE IS AT THE USER’S OWN RISK AND THAT THE SOFTWARE AND ALL RELATED DOCUMENTATION ARE PROVIDED "AS IS" WITHOUT ANY WARRANTIES OR CONDITIONS WHATSOEVER. NEITHER THE DEVELOPER NOR THE SOFTWARE DISTRIBUTORS WILL BE LIABLE FOR DATA LOSS, DAMAGES, AND LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.
+
+The DEVELOPER does NOT guarantee or warrant that:
+
+(a) The Software will be completely error-free or fault-free or reliable.
+(b) The Software is suitable for a particular purpose.
+(c) The Software will meet the USER’s requirements.
+(d) Defects in the Software will be corrected.
