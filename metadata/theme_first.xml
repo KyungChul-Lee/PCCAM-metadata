@@ -4,10 +4,10 @@
   <Title>PCCAM</Title>
   <AppName>PCCAM</AppName>
   <WorkingFolder>PCCAM</WorkingFolder>
-  <HelpText>도움말</HelpText>
-  <HelpWebsiteLink>https://doc.pccam.site</HelpWebsiteLink>
-  <OfflineActivationReadmeFileText>라이선스 활성화 서버 https://www.activationservice.net 에서 생성된 라이선스 요청 파일(.req)과 라이선스 파일(.lic)로 라이선스를 활성화하고, 활성화된 라이선스 파일(.act)을 가져오기. 상세내용은 https://doc.pccam.site 를 참고</OfflineActivationReadmeFileText>
-
+  <HelpText>Help</HelpText>
+  <HelpWebsiteLink>http://www.togetherbiz.co.kr/helpdesk</HelpWebsiteLink>
+  <OfflineActivationReadmeFileText>Use generated (.req) file and your license file (.lic) at Offline Activation web server https://www.activationservice.net to perform the activation and get activated file (.act) . For more information, see http://www.togetherbiz.co.kr/helpdesk .  </OfflineActivationReadmeFileText>
+ 
   <AppDefaults>
     <AllowMultipleCamerasMode>true</AllowMultipleCamerasMode>
     <AllowMultipleChannelsMode>true</AllowMultipleChannelsMode>
@@ -36,11 +36,11 @@
     <ShowCtrlAltD>true</ShowCtrlAltD>
     <AllowUsersChangeInOnvif>false</AllowUsersChangeInOnvif>
   </AppDefaults>
-
+  
   <Options>
-    <Name>옵션</Name>
-    <ReturnText>나가기</ReturnText>
-    <ReturnTooltip>옵션에서 나가기</ReturnTooltip>
+    <Name>Options</Name>
+    <ReturnText><![CDATA[<< Back]]></ReturnText>
+    <ReturnTooltip>Back</ReturnTooltip>
     <DynamicRtspPortText>Auto select RTSP Port</DynamicRtspPortText>
     <DynamicRtspPortTooltip>Automatically select free port for RTSP communication</DynamicRtspPortTooltip>
     <RtspPortText>Static RTSP Port</RtspPortText>
@@ -59,86 +59,83 @@
     <AllowMFSoftwareEncoderText>Allow MF SW encoder</AllowMFSoftwareEncoderText>
     <AllowMFSoftwareEncoderTooltip>Allow MF fallback to SW encoder (not recommended)</AllowMFSoftwareEncoderTooltip>
 
-    <IsHiddenModeText>숨김 모드(Ctrl+Alt+d)</IsHiddenModeText>
-    <IsHiddenModeTooltip>윈도우 트레이에 아이콘이 표시되지 않음. Ctrl+Alt+d 단축키를 입력하여 앱 열기</IsHiddenModeTooltip>
+    <IsHiddenModeText>Hidden mode(Ctr+Alt+d)</IsHiddenModeText>
+    <IsHiddenModeTooltip>When enabled the App will not show icon in Windows tray. Use Ctr+Alt+d combination to open the App window</IsHiddenModeTooltip>
 
     <EnableTVTCompatibilityText>TVT NVR Compatibility</EnableTVTCompatibilityText>
     <EnableTVTCompatibilityTooltip>Enable 'Compatibility mode' and 'SOAP tricks' to support TVT NVR/ED NVR/Easterncctv</EnableTVTCompatibilityTooltip>
 
-    <IsCtrlAltDEnabledText>Ctrl+Alt+d 단축키 사용</IsCtrlAltDEnabledText>
-    <IsCtrlAltDEnabledTooltip>Ctrl+Alt+d 단축키를 입력하여 앱 열기</IsCtrlAltDEnabledTooltip>
+    <IsCtrlAltDEnabledText>Enable Ctrl+Alt+d hotkey</IsCtrlAltDEnabledText>
+    <IsCtrlAltDEnabledTooltip>Display application window when Ctrl+Alt+d hotkey pressed</IsCtrlAltDEnabledTooltip>
 
-
+    
   </Options>
   <CameraSettings>
-    <Name>카메라 설정</Name>
-    <IpAddressText>IP 주소</IpAddressText>
-    <IpAddressTooltip>IP 주소</IpAddressTooltip>
-    <UsePort80Text>80 포트 사용</UsePort80Text>
-    <UsePort80Tooltip>다중 카메라 모드에서는 허용되지 않음</UsePort80Tooltip>
-    <CameraModeText>카메라 모드</CameraModeText>
-    <CameraModeTooltip>카메라 모드</CameraModeTooltip>
-    <MultipleChannelsText>다중 채널</MultipleChannelsText>
-    <MultipleChannelsTooltip>다중 채널 모드</MultipleChannelsTooltip>
-    <MultipleCamerasText>다중 카메라</MultipleCamerasText>
-    <MultipleCamerasTooltip>다중 카메라 모드</MultipleCamerasTooltip>
-    <OnvifUserText>ONVIF 계정</OnvifUserText>
-    <OnvifUserTooltip>ONVIF 아이디 및 비밀번호</OnvifUserTooltip>
-    <UserNameTooltip>아이디</UserNameTooltip>
-    <PasswordTooltip>비밀번호</PasswordTooltip>
-    <StartText>시작</StartText>
-    <StartTooltip>카메라 시작하기</StartTooltip>
-    <StopText>중지</StopText>
-    <StopTooltip>카메라 중지하기</StopTooltip>
-    <StartedCamerasText>카메라 시작됨</StartedCamerasText>
-    <NameColumnText>명칭</NameColumnText>
-    <PortColumnText>포트</PortColumnText>
-    <VideoSourcesColumnText>미디어 출처</VideoSourcesColumnText>
-    <InfoColumnText>정보</InfoColumnText>
-    <OnlineText>온라인</OnlineText>
-    <OfflineText>오프라인</OfflineText>
-    <DetailsButtonTooltip>카메라 상세조회</DetailsButtonTooltip>
-    <PreventIdleText>절전 모드 방지</PreventIdleText>
-    <PreventIdleTooltip>카메라가 시작된 동안은 절전 모드로 전환되지 않도록 함</PreventIdleTooltip>
-
-<!-- Menu not confirmed -->
+    <Name>Camera Settings</Name>
+    <IpAddressText>IP Address</IpAddressText>
+    <IpAddressTooltip>IP Address</IpAddressTooltip>
+    <UsePort80Text>Use port 80</UsePort80Text>
+    <UsePort80Tooltip>Use port 80 instead of standard ports. 'Multiple cameras' mode will not be allowed</UsePort80Tooltip>
+    <CameraModeText>Camera Mode</CameraModeText>
+    <CameraModeTooltip>Camera mode</CameraModeTooltip>
+    <MultipleChannelsText>Multiple channels</MultipleChannelsText>
+    <MultipleChannelsTooltip>Multiple channels mode</MultipleChannelsTooltip>
+    <MultipleCamerasText>Multiple cameras</MultipleCamerasText>
+    <MultipleCamerasTooltip>Multiple cameras mode</MultipleCamerasTooltip>
+    <OnvifUserText>ONVIF User</OnvifUserText>
+    <OnvifUserTooltip>ONVIF UserName and Password</OnvifUserTooltip>
+    <UserNameTooltip>UserName</UserNameTooltip>
+    <PasswordTooltip>Password</PasswordTooltip>
+    <StartText>Start</StartText>
+    <StartTooltip>Start Camera</StartTooltip>
+    <StopText>Stop</StopText>
+    <StopTooltip>Stop Camera</StopTooltip>
+    <StartedCamerasText>Started Cameras</StartedCamerasText>
+    <NameColumnText>Name</NameColumnText>
+    <PortColumnText>Port</PortColumnText>
+    <VideoSourcesColumnText>Video Sources</VideoSourcesColumnText>
+    <InfoColumnText>Info</InfoColumnText>
+    <OnlineText>Online</OnlineText>
+    <OfflineText>Offline</OfflineText>
+    <DetailsButtonTooltip>Camera Details</DetailsButtonTooltip>
+    <PreventIdleText>Prevent Win sleep</PreventIdleText>
+    <PreventIdleTooltip>Prevent Windows from entering sleep/idle state while camera is launched</PreventIdleTooltip>
     <EnableEventsText>Enable ONVIF events</EnableEventsText>
     <EnableEventsTooltip>Produce ONVIF monion events when mouse or keyboard used</EnableEventsTooltip>
     <BandwidthLowText>Bandwidth is too low</BandwidthLowText>
     <BandwidthLowTooltip>Network Bandwidth is not enough for the current bitrate. Please decrease cameras bitrate or improve Network speed</BandwidthLowTooltip>
 
 
-
     <RdpSafeDisconnectText>Safely close RDP</RdpSafeDisconnectText>
     <RdpSafeDisconnectTooltip>Disconnect the current RDP session and keep live streaming</RdpSafeDisconnectTooltip>
-<!-- End -->
 
-
+    
+    
   </CameraSettings>
   <VideoAudioSettings>
-    <Name>비디오 및 오디오 설정</Name>
-    <VideoAudioSettingsText>비디오 및  오디오 설정</VideoAudioSettingsText>
-    <StopCameraWarningText>비디오 및 오디오를 설정하려면 카메라를 중지해야 함</StopCameraWarningText>
-    <TypePropertyText>유형:</TypePropertyText>
-    <TypePropertyTooltip>입력된 비디오 유형</TypePropertyTooltip>
-    <RotatePropertyText>회전:</RotatePropertyText>
-    <RotatePropertyTooltip>출력될 비디오 회전</RotatePropertyTooltip>
-    <IsEnabledText>사용:</IsEnabledText>
-    <IsEnabledTooltip>미디어 출처 사용 or 사용 안 함</IsEnabledTooltip>
-    <AudioSourcePropertyText>오디오:</AudioSourcePropertyText>
-    <AudioSourcePropertyTooltip>입력될 오디오 출처 선택</AudioSourcePropertyTooltip>
-    <AutoModeText>자동 모드</AutoModeText>
-    <AutoModeTooltip>인코딩 비트레이트 및 GOV 길이 자동 조정</AutoModeTooltip>
-    <EnableHWEncodingText>HW 인코더</EnableHWEncodingText>
-    <EnableHWEncodingTooltip>Intel® Quick Sync 인코딩 사용</EnableHWEncodingTooltip>
-    <WebcamConnectionModePropertyText>모드:</WebcamConnectionModePropertyText>
-    <WebcamConnectionModePropertyTooltip>웹캠 연결 모드</WebcamConnectionModePropertyTooltip>
-    <TestMediaSourceText>RTSP 테스트</TestMediaSourceText>
-    <TestMediaSourceTooltip>현재 설정으로 미디어 출처에서 RTSP 스트리밍 테스트</TestMediaSourceTooltip>
-    <FinishTestText>지금 비디오 및 오디오가 실시간으로 보여짐. 끝내려면 OK 누름</FinishTestText>
-    <AddMediaSourceTooltip>미디어 출처 추가</AddMediaSourceTooltip>
-    <EditMediaSourceTooltip>미디어 출처 편집</EditMediaSourceTooltip>
-    <RemoveMediaSourceTooltip>미디어 출처 제거</RemoveMediaSourceTooltip>
+    <Name>Video &amp; Audio Settings</Name>
+    <VideoAudioSettingsText>Video &amp; Audio Settings</VideoAudioSettingsText>
+    <StopCameraWarningText>Stop the camera before editing Video &amp; Audio settings</StopCameraWarningText>
+    <TypePropertyText>Type:</TypePropertyText>
+    <TypePropertyTooltip>Input source type</TypePropertyTooltip>
+    <RotatePropertyText>Rotation:</RotatePropertyText>
+    <RotatePropertyTooltip>Rotate video output</RotatePropertyTooltip>
+    <IsEnabledText>Enable:</IsEnabledText>
+    <IsEnabledTooltip>Enable or Disable input source</IsEnabledTooltip>
+    <AudioSourcePropertyText>Audio:</AudioSourcePropertyText>
+    <AudioSourcePropertyTooltip>Select Audio input source</AudioSourcePropertyTooltip>
+    <AutoModeText>Auto mode</AutoModeText>
+    <AutoModeTooltip>Automatically adjust encoding Bitrate and GOV Length</AutoModeTooltip>
+    <EnableHWEncodingText>HW Encoder</EnableHWEncodingText>
+    <EnableHWEncodingTooltip>Enable Intel® Quick Sync encoding</EnableHWEncodingTooltip>
+    <WebcamConnectionModePropertyText>Mode:</WebcamConnectionModePropertyText>
+    <WebcamConnectionModePropertyTooltip>Webcam connection mode</WebcamConnectionModePropertyTooltip>
+    <TestMediaSourceText>Test RTSP</TestMediaSourceText>
+    <TestMediaSourceTooltip>Test RTSP streaming from the input source with the current settings</TestMediaSourceTooltip>
+    <FinishTestText>Live video and audio should be displaying now. Press OK to finish</FinishTestText>
+    <AddMediaSourceTooltip>Add new Media Source</AddMediaSourceTooltip>
+    <EditMediaSourceTooltip>Edit Media Source</EditMediaSourceTooltip>
+    <RemoveMediaSourceTooltip>Remove Media Source</RemoveMediaSourceTooltip>
     <FpsText>FPS control</FpsText>
     <FpsTooltip>FPS control</FpsTooltip>
     <FpsByNVRText>By NVR</FpsByNVRText>
@@ -149,7 +146,7 @@
     <VideoOverlayDisableText>Disable</VideoOverlayDisableText>
     <VideoOverlayText>Video overlay</VideoOverlayText>
     <VideoOverlayTooltip>Configure video overlay (May affect performance)</VideoOverlayTooltip>
-
+    
     <MotionEventText>Motion events</MotionEventText>
     <MotionEventTooltip>Configure ONVIF Motion events generation</MotionEventTooltip>
 
@@ -168,7 +165,7 @@
     <ProfileHasAudioColumnText>Audio</ProfileHasAudioColumnText>
 
     <TestVideoRendererTooltip>Video renderer type for the Test</TestVideoRendererTooltip>
-
+    
 
   </VideoAudioSettings>
   <AddCustomInputSource>
@@ -243,10 +240,10 @@
     <PicPositionTooltip>Select the position of the overlay media</PicPositionTooltip>
     <PicSizeText>Size %</PicSizeText>
     <PicSizeTooltip>Specify the Size of the overlay media</PicSizeTooltip>
-
+    
   </AddCustomInputSource>
   <AppPassword>
-    <Name>앱 비밀번호</Name>
+    <Name>App Password</Name>
     <NewPasswordText>New</NewPasswordText>
     <NewPasswordTooltip>New Password</NewPasswordTooltip>
     <ConfirmNewPasswordText>Confirm new</ConfirmNewPasswordText>
@@ -256,44 +253,42 @@
     <ApplyText>Apply</ApplyText>
     <ApplyTooltip>Apply new password</ApplyTooltip>
   </AppPassword>
-
   <LicenseInformation>
-    <Name>라이선스 정보</Name>
-    <LicenseText>라이선스:</LicenseText>
-    <TrialText>시험용</TrialText>
-    <CommercialText>상업용</CommercialText>
-    <LicenseSerialTooltip>시리얼 번호</LicenseSerialTooltip>
-    <LicensePeriodText>라이선스 기한:</LicensePeriodText>
-    <DaysText>일</DaysText>
-    <ActivationText>활성화:</ActivationText>
-    <RequiredText>필요</RequiredText>
-    <RequiredTooltip>라이선스가 활성화되어야 함</RequiredTooltip>
-    <CompletedText>완료</CompletedText>
-    <CompletedTooltip>활성화됨</CompletedTooltip>
-    <ExpiredText>(만료)</ExpiredText>
-    <ExpiredTooltip>라이선스 사용기한이 끝남</ExpiredTooltip>
-    <CorruptedText>(손상)</CorruptedText>
-    <CorruptedTooltip>라이선스가 손상되어 삭제후 다시 가져와야 함</CorruptedTooltip>
-    <DeviceIdTooltip>PC 아이디</DeviceIdTooltip>
-    <ValidFromText>유효기간:</ValidFromText>
-    <ValidTillText> ~ </ValidTillText>
-    <ImportButtonText>가져오기</ImportButtonText>
-    <ImportButtonTooltip>라이선스 가져오기</ImportButtonTooltip>
-    <ActivateButtonText>활성화</ActivateButtonText>
-    <ActivateButtonTooltip>라이선스 활성화하기</ActivateButtonTooltip>
-    <DeleteButtonText>삭제</DeleteButtonText>
-    <DeleteButtonTooltip>라이선스 삭제하기</DeleteButtonTooltip>
+    <Name>License information</Name>
+    <LicenseText>License:</LicenseText>
+    <TrialText>Trial</TrialText>
+    <CommercialText>Commercial</CommercialText>
+    <LicenseSerialTooltip>Serial number</LicenseSerialTooltip>
+    <LicensePeriodText>License period:</LicensePeriodText>
+    <DaysText>Days</DaysText>
+    <ActivationText>Activation:</ActivationText>
+    <RequiredText>Required</RequiredText>
+    <RequiredTooltip>The license must be activated</RequiredTooltip>
+    <CompletedText>Completed</CompletedText>
+    <CompletedTooltip>Activated</CompletedTooltip>
+    <ExpiredText>(EXPIRED)</ExpiredText>
+    <ExpiredTooltip>The License is expired</ExpiredTooltip>
+    <CorruptedText>(Corrupted)</CorruptedText>
+    <CorruptedTooltip>The License is corrupted. Please delete it and import again</CorruptedTooltip>
+    <DeviceIdTooltip>Device Id</DeviceIdTooltip>
+    <ValidFromText>Valid from</ValidFromText>
+    <ValidTillText>until</ValidTillText>
+    <ImportButtonText>Import</ImportButtonText>
+    <ImportButtonTooltip>Import the license</ImportButtonTooltip>
+    <ActivateButtonText>Activate</ActivateButtonText>
+    <ActivateButtonTooltip>Activate the license</ActivateButtonTooltip>
+    <DeleteButtonText>Delete License</DeleteButtonText>
+    <DeleteButtonTooltip>Delete the license</DeleteButtonTooltip>
 
-    <ImportOptionsText>라이선스 가져오기</ImportOptionsText>
-    <UseLicenseFileText>라이선스 파일(.lic)</UseLicenseFileText>
-    <UseLicenseFileTooltip>인터넷에서 활성화할 라이선스 파일 가져오기</UseLicenseFileTooltip>
-    <BrowseButtonText>찾기</BrowseButtonText>
-    <BrowseButtonTooltip>파일 찾기</BrowseButtonTooltip>
-    <UseOfflineActivationText>활성화 라이선스 파일(.act)</UseOfflineActivationText>
-    <UseOfflineActivationTooltip>활성화된 라이선스 파일 가져오기</UseOfflineActivationTooltip>
-    <CreateActivationRequestButtonText>활성화 요청 파일(.req) 생성</CreateActivationRequestButtonText>
+    <ImportOptionsText>Import from</ImportOptionsText>
+    <UseLicenseFileText>License file (.lic)</UseLicenseFileText>
+    <UseLicenseFileTooltip>Import from a License file (the Internet is required for Activation)</UseLicenseFileTooltip>
+    <BrowseButtonText>...</BrowseButtonText>
+    <BrowseButtonTooltip>Browse a file</BrowseButtonTooltip>
+    <UseOfflineActivationText>Offline Activated License file (.act)</UseOfflineActivationText>
+    <UseOfflineActivationTooltip>Import from an Offline activated License file</UseOfflineActivationTooltip>
+    <CreateActivationRequestButtonText>Create activation request</CreateActivationRequestButtonText>
 
-<!-- Menu not confirmed -->
     <UseLicenseServerText>Local License server</UseLicenseServerText>
     <UseLicenseServerTooltip>Import from a Local License server</UseLicenseServerTooltip>
     <LicenseServerUrlTooltip>Specify Local License server URL (E.g http://192.168.1.2:8088 )</LicenseServerUrlTooltip>
@@ -302,17 +297,14 @@
     <WaitingForLicenseServerText>Waiting for a License server..</WaitingForLicenseServerText>
     <LicenseServerConnectionErrorText>Connection error, reconnecting...</LicenseServerConnectionErrorText>
     <LicenseServerPendingText>Connected. Pending license assignment</LicenseServerPendingText>
-<!-- END -->
   </LicenseInformation>
-
   <About>
-    <Name>PCCAM 정보</Name>
-    <VersionText>버전</VersionText>
-    <WebsiteLink>https://www.pccam.site</WebsiteLink>
-    <ThirdPartySoftwareText>PCCAM은 3자가 제공하는 소프트웨어를 포함한다.</ThirdPartySoftwareText>
-    <DetailsText>상세조회:</DetailsText>
+    <Name>About</Name>
+    <VersionText>Version</VersionText>
+    <WebsiteLink>http://www.togetherbiz.co.kr/product/pccam</WebsiteLink>
+    <ThirdPartySoftwareText>*PCCAM includes computer software supplied by third-parties.</ThirdPartySoftwareText>
+    <DetailsText>For details check</DetailsText>
   </About>
-
   <Unblock>
     <Name>Unlock</Name>
     <PasswordTooltip>Unlock password</PasswordTooltip>
@@ -374,7 +366,7 @@
     <PreviewButtonTooltip>Preview the media profile</PreviewButtonTooltip>
 
     <PreviewMediaText>Media should be displaying now. Press OK to finish</PreviewMediaText>
-
+    
 
 
   </StartedCameraInfo>
@@ -405,7 +397,7 @@
 
     <NoVideoNoAudioSourcesText>There are no assigned Video or Audio sources</NoVideoNoAudioSourcesText>
     <TooHighFpsTooltip>FPS value too high. Current environment may not support this FPS rate (please test before use)</TooHighFpsTooltip>
-
+    
 
   </ConfigureController>
   <ConfigureOverlay>
@@ -424,7 +416,7 @@
 
     <OverlayColorText>Overlay color</OverlayColorText>
     <OverlayColorTooltip>Specify color for overlay</OverlayColorTooltip>
-
+    
   </ConfigureOverlay>
   <ConfigureMotion>
     <Name>Configure motion</Name>
@@ -442,23 +434,22 @@
     <KeyboardAllKeysTooltip>Generate Motion event if any key pressed</KeyboardAllKeysTooltip>
     <KeyboardSpecificKeyText>Specific Key</KeyboardSpecificKeyText>
     <KeyboardSpecificKeyTooltip>Generate Motion event if a specific key pressed</KeyboardSpecificKeyTooltip>
-
+    
     <ApiText>API call</ApiText>
     <ApiTooltip>Trigger motion events from extrarnal applications via Application Programming Interface (API)</ApiTooltip>
     <VideoSourceTokenText>API token</VideoSourceTokenText>
     <VideoSourceTokenTooltip>Token parameter, needed for the API call</VideoSourceTokenTooltip>
   </ConfigureMotion>
-
   <Messages>
     <CantStartCamera>Cannot start camera. Check log file for more details</CantStartCamera>
     <CriticalError>PCCAM encountered a critical exception. Please restart the application. We are sorry for the inconvenience</CriticalError>
-    <ConfirmActivation>활성화하면 라이선스가 이 PC와 연결됨. 동의함?</ConfirmActivation>
-    <ActivationCompleted>라이선스 활성화됨</ActivationCompleted>
+    <ConfirmActivation>Activation will tie the license to this PC. Continue?</ConfirmActivation>
+    <ActivationCompleted>The license has been activated</ActivationCompleted>
     <NewPasswordNotConfirmed>New password and confirm password are not same</NewPasswordNotConfirmed>
     <PasswordChanged>The password was changed</PasswordChanged>
     <WrongPassword>Wrong password, please try again</WrongPassword>
     <ConfirmDeleteLicense>Are you sure you want to delete current License?</ConfirmDeleteLicense>
-    <LicenseWasImported>라이선스 가져옮</LicenseWasImported>
+    <LicenseWasImported>The license has been imported</LicenseWasImported>
     <CantImportLicense>Cannot import lic file:</CantImportLicense>
     <OtherInstanceStarted>Another instance of the application is already running.</OtherInstanceStarted>
     <UnlockRequired>Unlock the application first</UnlockRequired>
@@ -469,7 +460,7 @@
     <FactoryResetError>Cannot reset to factory defaults</FactoryResetError>
     <NoIPAddressesDetected>Can't retreive IP addresses. The software will use PC hostname instead</NoIPAddressesDetected>
     <UniqueNameRequired>Please specify a unique name for custom Input Source. The Name '{0}' is already in use</UniqueNameRequired>
-    <ConfirmRemoveMediaSource>미디어 출처 '{0}' 제거됨. 동의함?</ConfirmRemoveMediaSource>
+    <ConfirmRemoveMediaSource>Media source '{0}' will be removed. Continue?</ConfirmRemoveMediaSource>
     <CancelProxyLicenseServerRequest>Cancel importing license from a Local License server ?</CancelProxyLicenseServerRequest>
     <CantConnectToLicenseServer>Cannot connect to the Server</CantConnectToLicenseServer>
 
@@ -480,6 +471,6 @@
     <ConfirmUsingH265>H265 stream would not work with ONVIF. Use H265 only for direct RTSP connections. Continue?</ConfirmUsingH265>
 
     <AudioCpuUsageWarning>Using Audio might noticeable increase CPU usage. Test before applying</AudioCpuUsageWarning>
-
+    
   </Messages>
 </AppTheme>
