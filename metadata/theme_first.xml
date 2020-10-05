@@ -1,13 +1,13 @@
 <AppTheme xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <ThemeFile>pack://application:,,,/PcCamApp;component/GeneralResources.xaml</ThemeFile>
+  <ThemeFile>pack://application:,,,/PCCAM;component/GeneralResources.xaml</ThemeFile>
   <AppClosingText>Please wait, the application is shutting down</AppClosingText>
   <Title>PCCAM</Title>
   <AppName>PCCAM</AppName>
   <WorkingFolder>PCCAM</WorkingFolder>
-  <HelpText>Help</HelpText>
-  <HelpWebsiteLink>http://www.togetherbiz.co.kr/helpdesk</HelpWebsiteLink>
-  <OfflineActivationReadmeFileText>Use generated (.req) file and your license file (.lic) at Offline Activation web server https://www.activationservice.net to perform the activation and get activated file (.act) . For more information, see http://www.togetherbiz.co.kr/helpdesk .  </OfflineActivationReadmeFileText>
- 
+  <HelpText>도움말</HelpText>
+  <HelpWebsiteLink>https://doc.pccam.site</HelpWebsiteLink>
+  <OfflineActivationReadmeFileText>Use generated (.req) file and your license file (.lic) at Offline Activation web server https://www.activationservice.net to perform the activation and get activated file (.act) . For more information, see https://doc.pccam.site .  </OfflineActivationReadmeFileText>
+
   <AppDefaults>
     <AllowMultipleCamerasMode>true</AllowMultipleCamerasMode>
     <AllowMultipleChannelsMode>true</AllowMultipleChannelsMode>
@@ -36,11 +36,11 @@
     <ShowCtrlAltD>true</ShowCtrlAltD>
     <AllowUsersChangeInOnvif>false</AllowUsersChangeInOnvif>
   </AppDefaults>
-  
+
   <Options>
-    <Name>Options</Name>
-    <ReturnText><![CDATA[<< Back]]></ReturnText>
-    <ReturnTooltip>Back</ReturnTooltip>
+    <Name>옵션</Name>
+    <ReturnText>뒤로</ReturnText>
+    <!-- <ReturnTooltip>뒤로</ReturnTooltip> -->
     <DynamicRtspPortText>Auto select RTSP Port</DynamicRtspPortText>
     <DynamicRtspPortTooltip>Automatically select free port for RTSP communication</DynamicRtspPortTooltip>
     <RtspPortText>Static RTSP Port</RtspPortText>
@@ -68,10 +68,10 @@
     <IsCtrlAltDEnabledText>Enable Ctrl+Alt+d hotkey</IsCtrlAltDEnabledText>
     <IsCtrlAltDEnabledTooltip>Display application window when Ctrl+Alt+d hotkey pressed</IsCtrlAltDEnabledTooltip>
 
-    
+
   </Options>
   <CameraSettings>
-    <Name>Camera Settings</Name>
+    <Name>카메라 설정</Name>
     <IpAddressText>IP Address</IpAddressText>
     <IpAddressTooltip>IP Address</IpAddressTooltip>
     <UsePort80Text>Use port 80</UsePort80Text>
@@ -91,10 +91,10 @@
     <StopText>Stop</StopText>
     <StopTooltip>Stop Camera</StopTooltip>
     <StartedCamerasText>Started Cameras</StartedCamerasText>
-    <NameColumnText>Name</NameColumnText>
-    <PortColumnText>Port</PortColumnText>
-    <VideoSourcesColumnText>Video Sources</VideoSourcesColumnText>
-    <InfoColumnText>Info</InfoColumnText>
+    <NameColumnText>카메라명</NameColumnText>
+    <PortColumnText>포트</PortColumnText>
+    <VideoSourcesColumnText>비디오명</VideoSourcesColumnText>
+    <InfoColumnText>정보</InfoColumnText>
     <OnlineText>Online</OnlineText>
     <OfflineText>Offline</OfflineText>
     <DetailsButtonTooltip>Camera Details</DetailsButtonTooltip>
@@ -109,11 +109,11 @@
     <RdpSafeDisconnectText>Safely close RDP</RdpSafeDisconnectText>
     <RdpSafeDisconnectTooltip>Disconnect the current RDP session and keep live streaming</RdpSafeDisconnectTooltip>
 
-    
-    
+
+
   </CameraSettings>
   <VideoAudioSettings>
-    <Name>Video &amp; Audio Settings</Name>
+    <Name>비디오 및 오디오 설정</Name>
     <VideoAudioSettingsText>Video &amp; Audio Settings</VideoAudioSettingsText>
     <StopCameraWarningText>Stop the camera before editing Video &amp; Audio settings</StopCameraWarningText>
     <TypePropertyText>Type:</TypePropertyText>
@@ -146,7 +146,7 @@
     <VideoOverlayDisableText>Disable</VideoOverlayDisableText>
     <VideoOverlayText>Video overlay</VideoOverlayText>
     <VideoOverlayTooltip>Configure video overlay (May affect performance)</VideoOverlayTooltip>
-    
+
     <MotionEventText>Motion events</MotionEventText>
     <MotionEventTooltip>Configure ONVIF Motion events generation</MotionEventTooltip>
 
@@ -165,7 +165,7 @@
     <ProfileHasAudioColumnText>Audio</ProfileHasAudioColumnText>
 
     <TestVideoRendererTooltip>Video renderer type for the Test</TestVideoRendererTooltip>
-    
+
 
   </VideoAudioSettings>
   <AddCustomInputSource>
@@ -240,10 +240,10 @@
     <PicPositionTooltip>Select the position of the overlay media</PicPositionTooltip>
     <PicSizeText>Size %</PicSizeText>
     <PicSizeTooltip>Specify the Size of the overlay media</PicSizeTooltip>
-    
+
   </AddCustomInputSource>
   <AppPassword>
-    <Name>App Password</Name>
+    <Name>앱 잠금</Name>
     <NewPasswordText>New</NewPasswordText>
     <NewPasswordTooltip>New Password</NewPasswordTooltip>
     <ConfirmNewPasswordText>Confirm new</ConfirmNewPasswordText>
@@ -254,14 +254,14 @@
     <ApplyTooltip>Apply new password</ApplyTooltip>
   </AppPassword>
   <LicenseInformation>
-    <Name>License information</Name>
-    <LicenseText>License:</LicenseText>
+    <Name>라이선스 정보</Name>
+    <LicenseText>라이선스:</LicenseText>
     <TrialText>Trial</TrialText>
     <CommercialText>Commercial</CommercialText>
     <LicenseSerialTooltip>Serial number</LicenseSerialTooltip>
     <LicensePeriodText>License period:</LicensePeriodText>
     <DaysText>Days</DaysText>
-    <ActivationText>Activation:</ActivationText>
+    <ActivationText>활성화:</ActivationText>
     <RequiredText>Required</RequiredText>
     <RequiredTooltip>The license must be activated</RequiredTooltip>
     <CompletedText>Completed</CompletedText>
@@ -301,7 +301,7 @@
   <About>
     <Name>About</Name>
     <VersionText>Version</VersionText>
-    <WebsiteLink>http://www.togetherbiz.co.kr/product/pccam</WebsiteLink>
+    <WebsiteLink>https://www.pccam.site</WebsiteLink>
     <ThirdPartySoftwareText>*PCCAM includes computer software supplied by third-parties.</ThirdPartySoftwareText>
     <DetailsText>For details check</DetailsText>
   </About>
@@ -366,7 +366,7 @@
     <PreviewButtonTooltip>Preview the media profile</PreviewButtonTooltip>
 
     <PreviewMediaText>Media should be displaying now. Press OK to finish</PreviewMediaText>
-    
+
 
 
   </StartedCameraInfo>
@@ -397,7 +397,7 @@
 
     <NoVideoNoAudioSourcesText>There are no assigned Video or Audio sources</NoVideoNoAudioSourcesText>
     <TooHighFpsTooltip>FPS value too high. Current environment may not support this FPS rate (please test before use)</TooHighFpsTooltip>
-    
+
 
   </ConfigureController>
   <ConfigureOverlay>
@@ -416,7 +416,7 @@
 
     <OverlayColorText>Overlay color</OverlayColorText>
     <OverlayColorTooltip>Specify color for overlay</OverlayColorTooltip>
-    
+
   </ConfigureOverlay>
   <ConfigureMotion>
     <Name>Configure motion</Name>
@@ -434,7 +434,7 @@
     <KeyboardAllKeysTooltip>Generate Motion event if any key pressed</KeyboardAllKeysTooltip>
     <KeyboardSpecificKeyText>Specific Key</KeyboardSpecificKeyText>
     <KeyboardSpecificKeyTooltip>Generate Motion event if a specific key pressed</KeyboardSpecificKeyTooltip>
-    
+
     <ApiText>API call</ApiText>
     <ApiTooltip>Trigger motion events from extrarnal applications via Application Programming Interface (API)</ApiTooltip>
     <VideoSourceTokenText>API token</VideoSourceTokenText>
@@ -471,6 +471,6 @@
     <ConfirmUsingH265>H265 stream would not work with ONVIF. Use H265 only for direct RTSP connections. Continue?</ConfirmUsingH265>
 
     <AudioCpuUsageWarning>Using Audio might noticeable increase CPU usage. Test before applying</AudioCpuUsageWarning>
-    
+
   </Messages>
 </AppTheme>
