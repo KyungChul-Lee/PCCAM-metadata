@@ -104,10 +104,10 @@
     <StartTooltip>Start Camera</StartTooltip>
     <StopText>Stop</StopText>
     <StopTooltip>Stop Camera</StopTooltip>
-    <StartedCamerasText>Started Cameras</StartedCamerasText>
+    <StartedCamerasText>시동 카메라</StartedCamerasText>
     <NameColumnText>카메라명</NameColumnText>
     <PortColumnText>포트</PortColumnText>
-    <VideoSourcesColumnText>비디오명</VideoSourcesColumnText>
+    <VideoSourcesColumnText>미디어명</VideoSourcesColumnText>
     <InfoColumnText>정보</InfoColumnText>
     <OnlineText>Online</OnlineText>
     <OfflineText>Offline</OfflineText>
@@ -129,7 +129,7 @@
   <VideoAudioSettings>
     <Name>비디오 및 오디오 설정</Name>
     <VideoAudioSettingsText>비디오 및 오디오 설정</VideoAudioSettingsText>
-    <StopCameraWarningText>비디오 및 오디오 설정 전 카메라 중지</StopCameraWarningText>
+    <StopCameraWarningText>비디오 및 오디오 설정 전 카메라 정지</StopCameraWarningText>
     <TypePropertyText>Type:</TypePropertyText>
     <TypePropertyTooltip>Input source type</TypePropertyTooltip>
     <RotatePropertyText>Rotation:</RotatePropertyText>
@@ -278,21 +278,21 @@
   <LicenseInformation>
     <Name>라이선스 정보</Name>
     <LicenseText>라이선스:</LicenseText>
-    <TrialText>Trial</TrialText>
-    <CommercialText>Commercial</CommercialText>
-    <LicenseSerialTooltip>Serial number</LicenseSerialTooltip>
+    <TrialText>시험용</TrialText>
+    <CommercialText>사업용</CommercialText>
+    <!-- <LicenseSerialTooltip>Serial number</LicenseSerialTooltip> -->
     <LicensePeriodText>License period:</LicensePeriodText>
     <DaysText>Days</DaysText>
     <ActivationText>활성화:</ActivationText>
-    <RequiredText>Required</RequiredText>
-    <RequiredTooltip>The license must be activated</RequiredTooltip>
-    <CompletedText>Completed</CompletedText>
-    <CompletedTooltip>Activated</CompletedTooltip>
-    <ExpiredText>(EXPIRED)</ExpiredText>
-    <ExpiredTooltip>The License is expired</ExpiredTooltip>
-    <CorruptedText>(Corrupted)</CorruptedText>
-    <CorruptedTooltip>The License is corrupted. Please delete it and import again</CorruptedTooltip>
-    <DeviceIdTooltip>Device Id</DeviceIdTooltip>
+    <RequiredText>필수</RequiredText>
+    <!-- <RequiredTooltip>The license must be activated</RequiredTooltip> -->
+    <CompletedText>완료</CompletedText>
+    <!-- <CompletedTooltip>Activated</CompletedTooltip> -->
+    <ExpiredText>만료</ExpiredText>
+    <!-- <ExpiredTooltip>The License is expired</ExpiredTooltip> -->
+    <CorruptedText>손상</CorruptedText>
+    <!-- <CorruptedTooltip>The License is corrupted. Please delete it and import again</CorruptedTooltip> -->
+    <!-- <DeviceIdTooltip>Device Id</DeviceIdTooltip> -->
     <ValidFromText>Valid from</ValidFromText>
     <ValidTillText>until</ValidTillText>
     <ImportButtonText>Import</ImportButtonText>
