@@ -1,20 +1,19 @@
 <AppTheme xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <ThemeFile>pack://application:,,,/DeskCamera;component/GeneralResources.xaml</ThemeFile>
+  <ThemeFile>pack://application:,,,/PcCamApp;component/GeneralResources.xaml</ThemeFile>
   <AppClosingText>Please wait, the application is shutting down</AppClosingText>
-  <Title>DeskCamera</Title>
-  <AppName>DeskCamera</AppName>
-  <WorkingFolder>DeskCamera</WorkingFolder>
+  <Title>PCCAM</Title>
+  <AppName>PCCAM</AppName>
+  <WorkingFolder>PCCAM</WorkingFolder>
   <HelpText>Help</HelpText>
-  <HelpWebsiteLink>https://www.deskcamera.com/Support</HelpWebsiteLink>
-  <OfflineActivationReadmeFileText>Use generated (.req) file and your license file (.lic) at Offline Activation web server https://www.activationservice.net to perform the activation and get activated file (.act) . Check this KB article for more details http://helpdesk.deskcamera.com/kb/faq.php?id=18  </OfflineActivationReadmeFileText>
+  <HelpWebsiteLink>http://www.togetherbiz.co.kr/helpdesk</HelpWebsiteLink>
+  <OfflineActivationReadmeFileText>Use generated (.req) file and your license file (.lic) at Offline Activation web server https://www.activationservice.net to perform the activation and get activated file (.act) . For more information, see http://www.togetherbiz.co.kr/helpdesk .  </OfflineActivationReadmeFileText>
+ 
   <AppDefaults>
     <AllowMultipleCamerasMode>true</AllowMultipleCamerasMode>
     <AllowMultipleChannelsMode>true</AllowMultipleChannelsMode>
-    <RtspUrlNamingForScreens>0</RtspUrlNamingForScreens>
-    <RtspUrlNamingForWebcams>2</RtspUrlNamingForWebcams>
-    <ShowRtspUrlNamingForScreens>true</ShowRtspUrlNamingForScreens>
-    <ShowRtspUrlNamingForWebcams>true</ShowRtspUrlNamingForWebcams>
-    <AllowImportingFromLocalLicensesServer>true</AllowImportingFromLocalLicensesServer>
+    <AllowFixedRTSPUrlForScreen>false</AllowFixedRTSPUrlForScreen>
+    <AllowFixedRTSPUrlForWebcam>true</AllowFixedRTSPUrlForWebcam>
+    <AllowImportingFromLocalLicensesServer>false</AllowImportingFromLocalLicensesServer>
     <UseDynamicRtspPort>true</UseDynamicRtspPort>
     <ShowDynamicRtspPort>true</ShowDynamicRtspPort>
     <UsePort80>false</UsePort80>
@@ -36,8 +35,6 @@
     <UseCtrlAltD>true</UseCtrlAltD>
     <ShowCtrlAltD>true</ShowCtrlAltD>
     <AllowUsersChangeInOnvif>false</AllowUsersChangeInOnvif>
-    <AudioUseWasapi>true</AudioUseWasapi>
-    <AudioNoiseSuppression>true</AudioNoiseSuppression>
   </AppDefaults>
   
   <Options>
@@ -71,17 +68,6 @@
     <IsCtrlAltDEnabledText>Enable Ctrl+Alt+d hotkey</IsCtrlAltDEnabledText>
     <IsCtrlAltDEnabledTooltip>Display application window when Ctrl+Alt+d hotkey pressed</IsCtrlAltDEnabledTooltip>
 
-    <AudioUseWasapiText>Use WASAPI</AudioUseWasapiText>
-    <AudioUseWasapiTooltip>Use Windows Audio Session API (WASAPI) for audio</AudioUseWasapiTooltip>
-
-    <RtspUrlNamingForScreenText>Screens RTSP url</RtspUrlNamingForScreenText>
-    <RtspUrlNamingForScreenTooltip>The way how software names RTSP urls for Screen sources</RtspUrlNamingForScreenTooltip>
-
-    <RtspUrlNamingForWebcamText>Webcams RTSP url</RtspUrlNamingForWebcamText>
-    <RtspUrlNamingForWebcamTooltip>The way how software names RTSP urls for Webcam sources</RtspUrlNamingForWebcamTooltip>
-
-    <AudioNoiseSuppressionText>Noise Suppression</AudioNoiseSuppressionText>
-    <AudioNoiseSuppressionTooltip>Remove noise from audio streams</AudioNoiseSuppressionTooltip>
     
   </Options>
   <CameraSettings>
@@ -200,12 +186,12 @@
     <EncTooltip>Encoding of the external Media Source video stream</EncTooltip>
 
     <EnableRtcpText>RTCP</EnableRtcpText>
-    <EnableRtcpToolTip>Use RTCP packets, disable it if the stream periodically disconnects</EnableRtcpToolTip>
+    <EnableRtcpToolTip>Enable RTCP packets, disable it for old incompatible RTSP servers</EnableRtcpToolTip>
     <EnableKeepAliveText>KeepAlive</EnableKeepAliveText>
     <EnableKeepAliveToolTip>Enable RTSP keep alive packets, disable it for old incompatible RTSP servers</EnableKeepAliveToolTip>
 
-    <ResolutionText>Resolut/Fps</ResolutionText>
-    <ResolutionTooltip>Resolution and FPS of the external Media Source video stream</ResolutionTooltip>
+    <ResolutionText>Resolution</ResolutionText>
+    <ResolutionTooltip>Resolution of the external Media Source video stream</ResolutionTooltip>
     <UseMultipartdemuxText>Multipartdemux</UseMultipartdemuxText>
     <UseMultipartdemuxTooltip>Use Multipartdemux</UseMultipartdemuxTooltip>
 
@@ -254,15 +240,7 @@
     <PicPositionTooltip>Select the position of the overlay media</PicPositionTooltip>
     <PicSizeText>Size %</PicSizeText>
     <PicSizeTooltip>Specify the Size of the overlay media</PicSizeTooltip>
-    <WallResolutionText>Resolution</WallResolutionText>
-    <WallResolutionTooltip>Desired resolution of the Wall media</WallResolutionTooltip>
-    <WallMaxFpsText>Max Fps</WallMaxFpsText>
-    <WallMaxFpsTooltip>Maximum possible FPS. Depends on the Wall Resolution and attached Video Sources capabilities</WallMaxFpsTooltip>
-
-    <AudioSourceText>Audio</AudioSourceText>
-    <AudioSourceTooltip>Select Audio input source</AudioSourceTooltip>
-
-
+    
   </AddCustomInputSource>
   <AppPassword>
     <Name>App Password</Name>
@@ -323,8 +301,8 @@
   <About>
     <Name>About</Name>
     <VersionText>Version</VersionText>
-    <WebsiteLink>https://www.deskcamera.com</WebsiteLink>
-    <ThirdPartySoftwareText>*DeskCamera includes computer software supplied by third-parties.</ThirdPartySoftwareText>
+    <WebsiteLink>http://www.togetherbiz.co.kr/product/pccam</WebsiteLink>
+    <ThirdPartySoftwareText>*PCCAM includes computer software supplied by third-parties.</ThirdPartySoftwareText>
     <DetailsText>For details check</DetailsText>
   </About>
   <Unblock>
@@ -338,8 +316,8 @@
     <HeaderText>Streams</HeaderText>
     <VideoSourceTypeText>Video source</VideoSourceTypeText>
     <VideoSourceTypeTooltip>Type of Video source</VideoSourceTypeTooltip>
-    <VideoSourceOriginalResolutionText>Source mode</VideoSourceOriginalResolutionText>
-    <VideoSourceOriginalResolutionTooltip>Connection mode to the Video Source</VideoSourceOriginalResolutionTooltip>
+    <VideoSourceOriginalResolutionText>Source resolution</VideoSourceOriginalResolutionText>
+    <VideoSourceOriginalResolutionTooltip>Original resolution of Video Source</VideoSourceOriginalResolutionTooltip>
     <VideoSourceRotationText>Rotate</VideoSourceRotationText>
     <VideoSourceRotationTooltip>Rotation configuration</VideoSourceRotationTooltip>
     <AudioSourceText>Audio source</AudioSourceText>
@@ -382,8 +360,6 @@
 
     <SlowStreamTooltip>Low performance stream</SlowStreamTooltip>
 
-    <NoTranscodingTooltip>Native stream from the source (not transcoded)</NoTranscodingTooltip>
-
     <NotStartedStream>Streaming was not started</NotStartedStream>
 
     <PreviewButtonText>Preview</PreviewButtonText>
@@ -421,9 +397,7 @@
 
     <NoVideoNoAudioSourcesText>There are no assigned Video or Audio sources</NoVideoNoAudioSourcesText>
     <TooHighFpsTooltip>FPS value too high. Current environment may not support this FPS rate (please test before use)</TooHighFpsTooltip>
-
-    <WebcamCaptureModeText>Capture Mode</WebcamCaptureModeText>
-    <WebcamCaptureModeTooltip>The Connection Mode to the source device</WebcamCaptureModeTooltip>
+    
 
   </ConfigureController>
   <ConfigureOverlay>
@@ -468,7 +442,7 @@
   </ConfigureMotion>
   <Messages>
     <CantStartCamera>Cannot start camera. Check log file for more details</CantStartCamera>
-    <CriticalError>DeskCamera encountered a critical exception. Please restart the application. We are sorry for the inconvenience</CriticalError>
+    <CriticalError>PCCAM encountered a critical exception. Please restart the application. We are sorry for the inconvenience</CriticalError>
     <ConfirmActivation>Activation will tie the license to this PC. Continue?</ConfirmActivation>
     <ActivationCompleted>The license has been activated</ActivationCompleted>
     <NewPasswordNotConfirmed>New password and confirm password are not same</NewPasswordNotConfirmed>
