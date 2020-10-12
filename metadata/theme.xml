@@ -6,11 +6,13 @@
   <WorkingFolder>PCCAM</WorkingFolder>
   <HelpText>도움말</HelpText>
   <HelpWebsiteLink>https://doc.pccam.site</HelpWebsiteLink>
-  <OfflineActivationReadmeFileText>Use generated (.req) file and your license file (.lic) at Offline Activation web server https://www.activationservice.net to perform the activation and get activated file (.act) . See https://doc.pccam.site for more information .  </OfflineActivationReadmeFileText>
+  <OfflineActivationReadmeFileText>오프라인 활성화 웹 서버(https://www.activationservice.net)에서 활성화 요청 파일(.req)과 라이선스 파일(.lic)로 오프라인 활성화 라이선스 파일(.act)을 생성합니다. 자세한 방법은 도움말 웹 서버(https://doc.pccam.site)를 참고하세요.</OfflineActivationReadmeFileText>
   <AppDefaults>
     <AllowMultipleCamerasMode>true</AllowMultipleCamerasMode>
     <AllowMultipleChannelsMode>true</AllowMultipleChannelsMode>
-    <RtspUrlNamingForScreens>0</RtspUrlNamingForScreens>
+    <!-- 스크린 RTSP URL 기본형식 변경 -->
+    <RtspUrlNamingForScreens>2</RtspUrlNamingForScreens>
+    <!-- END -->
     <RtspUrlNamingForWebcams>2</RtspUrlNamingForWebcams>
     <ShowRtspUrlNamingForScreens>true</ShowRtspUrlNamingForScreens>
     <ShowRtspUrlNamingForWebcams>true</ShowRtspUrlNamingForWebcams>
@@ -86,34 +88,34 @@
   </Options>
   <CameraSettings>
     <Name>카메라 설정</Name>
-    <IpAddressText>IP Address</IpAddressText>
-    <IpAddressTooltip>IP Address</IpAddressTooltip>
-    <UsePort80Text>Use port 80</UsePort80Text>
-    <UsePort80Tooltip>Use port 80 instead of standard ports. 'Multiple cameras' mode will not be allowed</UsePort80Tooltip>
-    <CameraModeText>Camera Mode</CameraModeText>
-    <CameraModeTooltip>Camera mode</CameraModeTooltip>
-    <MultipleChannelsText>Multiple channels</MultipleChannelsText>
-    <MultipleChannelsTooltip>Multiple channels mode</MultipleChannelsTooltip>
-    <MultipleCamerasText>Multiple cameras</MultipleCamerasText>
-    <MultipleCamerasTooltip>Multiple cameras mode</MultipleCamerasTooltip>
-    <OnvifUserText>ONVIF User</OnvifUserText>
-    <OnvifUserTooltip>ONVIF UserName and Password</OnvifUserTooltip>
-    <UserNameTooltip>UserName</UserNameTooltip>
-    <PasswordTooltip>Password</PasswordTooltip>
-    <StartText>Start</StartText>
-    <StartTooltip>Start Camera</StartTooltip>
-    <StopText>Stop</StopText>
-    <StopTooltip>Stop Camera</StopTooltip>
-    <StartedCamerasText>시동 카메라</StartedCamerasText>
+    <IpAddressText>IP 주소</IpAddressText>
+    <!-- <IpAddressTooltip>IP Address</IpAddressTooltip> -->
+    <UsePort80Text>80 포트 사용</UsePort80Text>
+    <UsePort80Tooltip>기본 포트 대신 80포트를 사용, 다중 카메라 방식에서는 불가</UsePort80Tooltip>
+    <CameraModeText>카메라 방식</CameraModeText>
+    <!-- <CameraModeTooltip>Camera mode</CameraModeTooltip> -->
+    <MultipleChannelsText>다중 채널</MultipleChannelsText>
+    <!-- <MultipleChannelsTooltip>Multiple channels mode</MultipleChannelsTooltip> -->
+    <MultipleCamerasText>다중 카메라</MultipleCamerasText>
+    <!-- <MultipleCamerasTooltip>Multiple cameras mode</MultipleCamerasTooltip> -->
+    <OnvifUserText>ONVIF 계정</OnvifUserText>
+    <!-- <OnvifUserTooltip>ONVIF UserName and Password</OnvifUserTooltip> -->
+    <UserNameTooltip>아이디 입력</UserNameTooltip>
+    <PasswordTooltip>비밀번호 입력</PasswordTooltip>
+    <StartText>시작</StartText>
+    <!-- <StartTooltip>Start Camera</StartTooltip> -->
+    <StopText>정지</StopText>
+    <!-- <StopTooltip>Stop Camera</StopTooltip> -->
+    <StartedCamerasText>실행 카메라</StartedCamerasText>
     <NameColumnText>카메라명</NameColumnText>
     <PortColumnText>포트</PortColumnText>
     <VideoSourcesColumnText>미디어명</VideoSourcesColumnText>
     <InfoColumnText>정보</InfoColumnText>
-    <OnlineText>Online</OnlineText>
-    <OfflineText>Offline</OfflineText>
-    <!-- <DetailsButtonTooltip>Camera Details</DetailsButtonTooltip> -->
-    <PreventIdleText>Prevent Win sleep</PreventIdleText>
-    <PreventIdleTooltip>Prevent Windows from entering sleep/idle state while camera is launched</PreventIdleTooltip>
+    <OnlineText>온라인</OnlineText>
+    <OfflineText>오프라인</OfflineText>
+    <DetailsButtonTooltip>카메라 정보</DetailsButtonTooltip>
+    <PreventIdleText>윈도우 절전 방지</PreventIdleText>
+    <PreventIdleTooltip>카메라가 실행되는 동안 윈도우가 절전상태로 전환되는 것을 방지</PreventIdleTooltip>
     <EnableEventsText>Enable ONVIF events</EnableEventsText>
     <EnableEventsTooltip>Produce ONVIF monion events when mouse or keyboard used</EnableEventsTooltip>
     <BandwidthLowText>Bandwidth is too low</BandwidthLowText>
@@ -129,27 +131,17 @@
   <VideoAudioSettings>
     <Name>비디오 및 오디오 설정</Name>
     <VideoAudioSettingsText>비디오 및 오디오 설정</VideoAudioSettingsText>
-    <StopCameraWarningText>비디오 및 오디오 설정 전 카메라 정지</StopCameraWarningText>
-    <TypePropertyText>Type:</TypePropertyText>
-    <TypePropertyTooltip>Input source type</TypePropertyTooltip>
-    <RotatePropertyText>Rotation:</RotatePropertyText>
-    <RotatePropertyTooltip>Rotate video output</RotatePropertyTooltip>
-    <IsEnabledText>Enable:</IsEnabledText>
-    <IsEnabledTooltip>Enable or Disable input source</IsEnabledTooltip>
-    <AudioSourcePropertyText>Audio:</AudioSourcePropertyText>
-    <AudioSourcePropertyTooltip>Select Audio input source</AudioSourcePropertyTooltip>
+    <StopCameraWarningText>비디오 및 오디오 설정전 카메라 정지</StopCameraWarningText>
     <AutoModeText>Auto mode</AutoModeText>
     <AutoModeTooltip>Automatically adjust encoding Bitrate and GOV Length</AutoModeTooltip>
     <EnableHWEncodingText>HW Encoder</EnableHWEncodingText>
     <EnableHWEncodingTooltip>Enable Intel® Quick Sync encoding</EnableHWEncodingTooltip>
     <WebcamConnectionModePropertyText>Mode:</WebcamConnectionModePropertyText>
     <WebcamConnectionModePropertyTooltip>Webcam connection mode</WebcamConnectionModePropertyTooltip>
-    <TestMediaSourceText>Test RTSP</TestMediaSourceText>
-    <TestMediaSourceTooltip>Test RTSP streaming from the input source with the current settings</TestMediaSourceTooltip>
     <FinishTestText>Live video and audio should be displaying now. Press OK to finish</FinishTestText>
-    <AddMediaSourceTooltip>Add new Media Source</AddMediaSourceTooltip>
-    <EditMediaSourceTooltip>Edit Media Source</EditMediaSourceTooltip>
-    <RemoveMediaSourceTooltip>Remove Media Source</RemoveMediaSourceTooltip>
+    <AddMediaSourceTooltip>미디어 추가</AddMediaSourceTooltip>
+    <EditMediaSourceTooltip>편집</EditMediaSourceTooltip>
+    <RemoveMediaSourceTooltip>제거</RemoveMediaSourceTooltip>
     <FpsText>FPS control</FpsText>
     <FpsTooltip>FPS control</FpsTooltip>
     <FpsByNVRText>By NVR</FpsByNVRText>
@@ -168,23 +160,17 @@
     <StreamControllerTooltip>Configure stream controller</StreamControllerTooltip>
 
 
-    <PickProfileDialogName>Select stream</PickProfileDialogName>
-    <ProfileNameColumnText>Name</ProfileNameColumnText>
-    <VideoEncoderColumnText>Encoder</VideoEncoderColumnText>
-    <AudioEncoderColumnText>Audio</AudioEncoderColumnText>
-    <VideoResolutionColumnText>Resolution</VideoResolutionColumnText>
     <VideoFpsColumnText>FPS</VideoFpsColumnText>
 
     <ProfileHasVideoColumnText>Video</ProfileHasVideoColumnText>
     <ProfileHasAudioColumnText>Audio</ProfileHasAudioColumnText>
 
-    <TestVideoRendererTooltip>Video renderer type for the Test</TestVideoRendererTooltip>
 
 
   </VideoAudioSettings>
   <AddCustomInputSource>
-    <Name>Add Media Source</Name>
-    <ConfigureInputSourceText>미디어 출처 구성</ConfigureInputSourceText>
+    <Name>미디어 추가</Name>
+    <ConfigureInputSourceText>미디어 구성</ConfigureInputSourceText>
     <InputSourceNameText>Name</InputSourceNameText>
     <InputSourceNameTooltip>Name for the external Media Source (up to 10 symbols)</InputSourceNameTooltip>
 
@@ -265,24 +251,25 @@
 
   </AddCustomInputSource>
   <AppPassword>
-    <Name>앱 잠금</Name>
-    <NewPasswordText>New</NewPasswordText>
-    <NewPasswordTooltip>New Password</NewPasswordTooltip>
-    <ConfirmNewPasswordText>Confirm new</ConfirmNewPasswordText>
-    <ConfirmNewPasswordTooltip>Confirm new password</ConfirmNewPasswordTooltip>
-    <CurrentPasswordText>Current</CurrentPasswordText>
-    <CurrentTooltip>Current password</CurrentTooltip>
-    <ApplyText>Apply</ApplyText>
-    <ApplyTooltip>Apply new password</ApplyTooltip>
+    <Name>앱 비밀번호</Name>
+    <NewPasswordText>비밀번호</NewPasswordText>
+    <!-- <NewPasswordTooltip>New Password</NewPasswordTooltip> -->
+    <ConfirmNewPasswordText>비밀번호 확인</ConfirmNewPasswordText>
+    <!-- <ConfirmNewPasswordTooltip>Confirm new password</ConfirmNewPasswordTooltip> -->
+    <CurrentPasswordText>현재 비밀번호</CurrentPasswordText>
+    <!-- <CurrentTooltip>Current password</CurrentTooltip> -->
+    <ApplyText>적용</ApplyText>
+    <!-- <ApplyTooltip>Apply new password</ApplyTooltip> -->
   </AppPassword>
+
   <LicenseInformation>
     <Name>라이선스 정보</Name>
     <LicenseText>라이선스:</LicenseText>
     <TrialText>시험용</TrialText>
-    <CommercialText>사업용</CommercialText>
+    <CommercialText>상업용</CommercialText>
     <!-- <LicenseSerialTooltip>Serial number</LicenseSerialTooltip> -->
-    <LicensePeriodText>License period:</LicensePeriodText>
-    <DaysText>Days</DaysText>
+    <LicensePeriodText>유효기한:</LicensePeriodText>
+    <DaysText>일</DaysText>
     <ActivationText>활성화:</ActivationText>
     <RequiredText>필수</RequiredText>
     <!-- <RequiredTooltip>The license must be activated</RequiredTooltip> -->
@@ -293,23 +280,23 @@
     <CorruptedText>손상</CorruptedText>
     <!-- <CorruptedTooltip>The License is corrupted. Please delete it and import again</CorruptedTooltip> -->
     <!-- <DeviceIdTooltip>Device Id</DeviceIdTooltip> -->
-    <ValidFromText>Valid from</ValidFromText>
-    <ValidTillText>until</ValidTillText>
-    <ImportButtonText>Import</ImportButtonText>
-    <ImportButtonTooltip>Import the license</ImportButtonTooltip>
-    <ActivateButtonText>Activate</ActivateButtonText>
-    <ActivateButtonTooltip>Activate the license</ActivateButtonTooltip>
-    <DeleteButtonText>Delete License</DeleteButtonText>
-    <DeleteButtonTooltip>Delete the license</DeleteButtonTooltip>
+    <ValidFromText>유효기간:</ValidFromText>
+    <ValidTillText><![CDATA[~]]></ValidTillText>
+    <ImportButtonText>설정</ImportButtonText>
+    <!-- <ImportButtonTooltip>Import the license</ImportButtonTooltip> -->
+    <ActivateButtonText>활성화</ActivateButtonText>
+    <!-- <ActivateButtonTooltip>Activate the license</ActivateButtonTooltip> -->
+    <DeleteButtonText>삭제</DeleteButtonText>
+    <!-- <DeleteButtonTooltip>Delete the license</DeleteButtonTooltip> -->
 
-    <ImportOptionsText>Import from</ImportOptionsText>
-    <UseLicenseFileText>License file (.lic)</UseLicenseFileText>
-    <UseLicenseFileTooltip>Import from a License file (the Internet is required for Activation)</UseLicenseFileTooltip>
-    <BrowseButtonText>...</BrowseButtonText>
-    <BrowseButtonTooltip>Browse a file</BrowseButtonTooltip>
-    <UseOfflineActivationText>Offline Activated License file (.act)</UseOfflineActivationText>
-    <UseOfflineActivationTooltip>Import from an Offline activated License file</UseOfflineActivationTooltip>
-    <CreateActivationRequestButtonText>Create activation request</CreateActivationRequestButtonText>
+    <ImportOptionsText>라이선스 설정</ImportOptionsText>
+    <UseLicenseFileText>라이선스 파일(.lic)</UseLicenseFileText>
+    <!-- <UseLicenseFileTooltip>Import from a License file (the Internet is required for Activation)</UseLicenseFileTooltip> -->
+    <BrowseButtonText>찾기</BrowseButtonText>
+    <!-- <BrowseButtonTooltip>Browse a file</BrowseButtonTooltip> -->
+    <UseOfflineActivationText>오프라인 활성화 라이선스 파일(.act)</UseOfflineActivationText>
+    <!-- <UseOfflineActivationTooltip>Import from an Offline activated License file</UseOfflineActivationTooltip> -->
+    <CreateActivationRequestButtonText>활성화 요청 파일 생성</CreateActivationRequestButtonText>
 
     <UseLicenseServerText>Local License server</UseLicenseServerText>
     <UseLicenseServerTooltip>Import from a Local License server</UseLicenseServerTooltip>
@@ -328,14 +315,14 @@
     <DetailsText>For details check</DetailsText>
   </About>
   <Unblock>
-    <Name>Unlock</Name>
-    <PasswordTooltip>Unlock password</PasswordTooltip>
-    <UnblockButtonText>Unlock</UnblockButtonText>
-    <UnblockTooltip>Unlock</UnblockTooltip>
+    <Name>앱 잠금해제</Name>
+    <PasswordTooltip>앱 비밀번호 입력</PasswordTooltip>
+    <UnblockButtonText>잠금해제</UnblockButtonText>
+    <!-- <UnblockTooltip>Unlock</UnblockTooltip> -->
   </Unblock>
   <StartedCameraInfo>
-    <Name>Camera details</Name>
-    <HeaderText>Streams</HeaderText>
+    <Name>카메라 정보</Name>
+    <HeaderText>스트림</HeaderText>
     <VideoSourceTypeText>Video source</VideoSourceTypeText>
     <VideoSourceTypeTooltip>Type of Video source</VideoSourceTypeTooltip>
     <VideoSourceOriginalResolutionText>Source mode</VideoSourceOriginalResolutionText>
@@ -374,13 +361,13 @@
     <CopyRtspButtonText>Copy</CopyRtspButtonText>
     <CopyRtspButtonTooltip>Copy direct RTSP URL to clipboard</CopyRtspButtonTooltip>
 
-    <HwAcceleratedTooltip>High performance stream (Hardware accelerated)</HwAcceleratedTooltip>
+    <HwAcceleratedTooltip>높은 성능의 스트림(하드웨어 가속)</HwAcceleratedTooltip>
 
-    <IncomingConnectionsTooltip>Connected clients</IncomingConnectionsTooltip>
+    <IncomingConnectionsTooltip>연결된 클라이언트</IncomingConnectionsTooltip>
 
-    <PartiallyAcceleratedTooltip>Medium performance stream (Partially accelerated)</PartiallyAcceleratedTooltip>
+    <PartiallyAcceleratedTooltip>중간 성능의 스트림(부분 가속)</PartiallyAcceleratedTooltip>
 
-    <SlowStreamTooltip>Low performance stream</SlowStreamTooltip>
+    <SlowStreamTooltip>낮은 성능의 스트림</SlowStreamTooltip>
 
     <NoTranscodingTooltip>Native stream from the source (not transcoded)</NoTranscodingTooltip>
 
