@@ -91,7 +91,7 @@
     <IpAddressText>IP 주소</IpAddressText>
     <!-- <IpAddressTooltip>IP Address</IpAddressTooltip> -->
     <UsePort80Text>80 포트 사용</UsePort80Text>
-    <UsePort80Tooltip>기본 포트 대신 80포트를 사용, 다중 카메라 방식에서는 불가</UsePort80Tooltip>
+    <UsePort80Tooltip>기본 포트 대신 80포트를 사용하며 다중 카메라 방식에서는 허용되지 않음.</UsePort80Tooltip>
     <CameraModeText>카메라 방식</CameraModeText>
     <!-- <CameraModeTooltip>Camera mode</CameraModeTooltip> -->
     <MultipleChannelsText>다중 채널</MultipleChannelsText>
@@ -115,7 +115,7 @@
     <OfflineText>오프라인</OfflineText>
     <DetailsButtonTooltip>카메라 정보</DetailsButtonTooltip>
     <PreventIdleText>윈도우 절전 방지</PreventIdleText>
-    <PreventIdleTooltip>카메라가 실행되는 동안 윈도우가 절전상태로 전환되는 것을 방지</PreventIdleTooltip>
+    <PreventIdleTooltip>카메라가 실행되는 동안 윈도우가 절전모드로 전환되는 것을 방지</PreventIdleTooltip>
     <EnableEventsText>Enable ONVIF events</EnableEventsText>
     <EnableEventsTooltip>Produce ONVIF monion events when mouse or keyboard used</EnableEventsTooltip>
     <BandwidthLowText>Bandwidth is too low</BandwidthLowText>
@@ -131,7 +131,7 @@
   <VideoAudioSettings>
     <Name>비디오 및 오디오 설정</Name>
     <VideoAudioSettingsText>비디오 및 오디오 설정</VideoAudioSettingsText>
-    <StopCameraWarningText>비디오 및 오디오 설정전 카메라 정지</StopCameraWarningText>
+    <StopCameraWarningText>비디오 및 오디오를 설정하려면 카메라를 정지해야 함.</StopCameraWarningText>
     <AutoModeText>Auto mode</AutoModeText>
     <AutoModeTooltip>Automatically adjust encoding Bitrate and GOV Length</AutoModeTooltip>
     <EnableHWEncodingText>HW Encoder</EnableHWEncodingText>
@@ -455,7 +455,7 @@
   </ConfigureMotion>
   <Messages>
     <CantStartCamera>Cannot start camera. Check log file for more details</CantStartCamera>
-    <CriticalError>DeskCamera encountered a critical exception. Please restart the application. We are sorry for the inconvenience</CriticalError>
+    <CriticalError>PCCAM encountered a critical exception. Please restart the application. We are sorry for the inconvenience</CriticalError>
     <ConfirmActivation>Activation will tie the license to this PC. Continue?</ConfirmActivation>
     <ActivationCompleted>The license has been activated</ActivationCompleted>
     <NewPasswordNotConfirmed>New password and confirm password are not same</NewPasswordNotConfirmed>
