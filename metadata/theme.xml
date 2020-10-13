@@ -91,7 +91,7 @@
     <IpAddressText>IP 주소</IpAddressText>
     <!-- <IpAddressTooltip>IP Address</IpAddressTooltip> -->
     <UsePort80Text>80 포트 사용</UsePort80Text>
-    <UsePort80Tooltip>기본 포트 대신 80포트를 사용하며 다중 카메라 방식에서는 허용되지 않음.</UsePort80Tooltip>
+    <UsePort80Tooltip>기본 포트 대신 80 포트를 사용하며 다중 카메라 방식에서는 허용되지 않음.</UsePort80Tooltip>
     <CameraModeText>카메라 방식</CameraModeText>
     <!-- <CameraModeTooltip>Camera mode</CameraModeTooltip> -->
     <MultipleChannelsText>다중 채널</MultipleChannelsText>
@@ -132,12 +132,22 @@
     <Name>비디오 및 오디오 설정</Name>
     <VideoAudioSettingsText>비디오 및 오디오 설정</VideoAudioSettingsText>
     <StopCameraWarningText>비디오 및 오디오를 설정하려면 카메라를 정지해야 함.</StopCameraWarningText>
+    <TypePropertyText>Type:</TypePropertyText>
+    <TypePropertyTooltip>Input source type</TypePropertyTooltip>
+    <RotatePropertyText>Rotation:</RotatePropertyText>
+    <RotatePropertyTooltip>Rotate video output</RotatePropertyTooltip>
+    <IsEnabledText>Enable:</IsEnabledText>
+    <IsEnabledTooltip>Enable or Disable input source</IsEnabledTooltip>
+    <AudioSourcePropertyText>Audio:</AudioSourcePropertyText>
+    <AudioSourcePropertyTooltip>Select Audio input source</AudioSourcePropertyTooltip>
     <AutoModeText>Auto mode</AutoModeText>
     <AutoModeTooltip>Automatically adjust encoding Bitrate and GOV Length</AutoModeTooltip>
     <EnableHWEncodingText>HW Encoder</EnableHWEncodingText>
     <EnableHWEncodingTooltip>Enable Intel® Quick Sync encoding</EnableHWEncodingTooltip>
     <WebcamConnectionModePropertyText>Mode:</WebcamConnectionModePropertyText>
     <WebcamConnectionModePropertyTooltip>Webcam connection mode</WebcamConnectionModePropertyTooltip>
+    <TestMediaSourceText>Test RTSP</TestMediaSourceText>
+    <TestMediaSourceTooltip>Test RTSP streaming from the input source with the current settings</TestMediaSourceTooltip>
     <FinishTestText>Live video and audio should be displaying now. Press OK to finish</FinishTestText>
     <AddMediaSourceTooltip>미디어 추가</AddMediaSourceTooltip>
     <EditMediaSourceTooltip>편집</EditMediaSourceTooltip>
@@ -160,11 +170,17 @@
     <StreamControllerTooltip>Configure stream controller</StreamControllerTooltip>
 
 
+    <PickProfileDialogName>Select stream</PickProfileDialogName>
+    <ProfileNameColumnText>Name</ProfileNameColumnText>
+    <VideoEncoderColumnText>Encoder</VideoEncoderColumnText>
+    <AudioEncoderColumnText>Audio</AudioEncoderColumnText>
+    <VideoResolutionColumnText>Resolution</VideoResolutionColumnText>
     <VideoFpsColumnText>FPS</VideoFpsColumnText>
 
     <ProfileHasVideoColumnText>Video</ProfileHasVideoColumnText>
     <ProfileHasAudioColumnText>Audio</ProfileHasAudioColumnText>
 
+    <TestVideoRendererTooltip>Video renderer type for the Test</TestVideoRendererTooltip>
 
 
   </VideoAudioSettings>
