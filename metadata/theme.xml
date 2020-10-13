@@ -268,7 +268,7 @@
   </AddCustomInputSource>
   <AppPassword>
     <Name>앱 비밀번호</Name>
-    <NewPasswordText>비밀번호</NewPasswordText>
+    <NewPasswordText>새 비밀번호</NewPasswordText>
     <!-- <NewPasswordTooltip>New Password</NewPasswordTooltip> -->
     <ConfirmNewPasswordText>비밀번호 확인</ConfirmNewPasswordText>
     <!-- <ConfirmNewPasswordTooltip>Confirm new password</ConfirmNewPasswordTooltip> -->
@@ -333,7 +333,7 @@
   <Unblock>
     <Name>앱 잠금해제</Name>
     <PasswordTooltip>앱 비밀번호 입력</PasswordTooltip>
-    <UnblockButtonText>잠금해제</UnblockButtonText>
+    <UnblockButtonText>적용</UnblockButtonText>
     <!-- <UnblockTooltip>Unlock</UnblockTooltip> -->
   </Unblock>
   <StartedCameraInfo>
