@@ -1,19 +1,23 @@
 <AppTheme xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-  <ThemeFile>pack://application:,,,/PCCAM;component/GeneralResources.xaml</ThemeFile>
+  <ThemeFile>pack://application:,,,/DeskCamera;component/GeneralResources.xaml</ThemeFile>
   <AppClosingText>Please wait, the application is shutting down</AppClosingText>
-  <Title>PCCAM</Title>
-  <AppName>PCCAM</AppName>
-  <WorkingFolder>PCCAM</WorkingFolder>
-  <HelpText>도움말</HelpText>
-  <HelpWebsiteLink>https://doc.pccam.site</HelpWebsiteLink>
-  <OfflineActivationReadmeFileText>Use generated (.req) file and your license file (.lic) at Offline Activation web server https://www.activationservice.net to perform the activation and get activated file (.act) . For more information, see https://doc.pccam.site .  </OfflineActivationReadmeFileText>
-
+  <Title>DeskCamera</Title>
+  <AppName>DeskCamera</AppName>
+  <WorkingFolder>DeskCamera</WorkingFolder>
+  <HelpText>Help</HelpText>
+  <HelpWebsiteLink>https://www.deskcamera.com/Support</HelpWebsiteLink>
+  <OfflineActivationReadmeFileText>Use generated (.req) file and your license file (.lic) at Offline Activation web server https://www.activationservice.net to perform the activation and get activated file (.act) . Check this KB article for more details http://helpdesk.deskcamera.com/kb/faq.php?id=18  </OfflineActivationReadmeFileText>
   <AppDefaults>
     <AllowMultipleCamerasMode>true</AllowMultipleCamerasMode>
     <AllowMultipleChannelsMode>true</AllowMultipleChannelsMode>
-    <AllowFixedRTSPUrlForScreen>false</AllowFixedRTSPUrlForScreen>
-    <AllowFixedRTSPUrlForWebcam>true</AllowFixedRTSPUrlForWebcam>
+    <RtspUrlNamingForScreens>0</RtspUrlNamingForScreens>
+    <RtspUrlNamingForWebcams>2</RtspUrlNamingForWebcams>
+    <ShowRtspUrlNamingForScreens>true</ShowRtspUrlNamingForScreens>
+    <ShowRtspUrlNamingForWebcams>true</ShowRtspUrlNamingForWebcams>
+    <AllowPerpetualLicense>true</AllowPerpetualLicense>
+    <AllowSubscriptionLicense>true</AllowSubscriptionLicense>
     <AllowImportingFromLocalLicensesServer>false</AllowImportingFromLocalLicensesServer>
+    <AllowImportingFromLocalSubscriptionServer>true</AllowImportingFromLocalSubscriptionServer>
     <UseDynamicRtspPort>true</UseDynamicRtspPort>
     <ShowDynamicRtspPort>true</ShowDynamicRtspPort>
     <UsePort80>false</UsePort80>
@@ -35,12 +39,17 @@
     <UseCtrlAltD>true</UseCtrlAltD>
     <ShowCtrlAltD>true</ShowCtrlAltD>
     <AllowUsersChangeInOnvif>false</AllowUsersChangeInOnvif>
+    <AudioUseWasapi>true</AudioUseWasapi>
+    <AudioNoiseSuppression>true</AudioNoiseSuppression>
+    <DefaultLocalSubscriptionServerAddress>http://192.168.1.2:8088</DefaultLocalSubscriptionServerAddress>
+    <AllowAutoUpdate>true</AllowAutoUpdate>
+    <AutoUpdateXmlPath>https://www.deskcamera.com/Install/UpdateInfo.xml</AutoUpdateXmlPath>
   </AppDefaults>
 
   <Options>
-    <Name>옵션</Name>
-    <ReturnText>뒤로</ReturnText>
-    <!-- <ReturnTooltip>뒤로</ReturnTooltip> -->
+    <Name>Options</Name>
+    <ReturnText><![CDATA[<< Back]]></ReturnText>
+    <ReturnTooltip>Back</ReturnTooltip>
     <DynamicRtspPortText>Auto select RTSP Port</DynamicRtspPortText>
     <DynamicRtspPortTooltip>Automatically select free port for RTSP communication</DynamicRtspPortTooltip>
     <RtspPortText>Static RTSP Port</RtspPortText>
@@ -54,7 +63,7 @@
     <EnableCompatibilityModeText>Compatibility mode</EnableCompatibilityModeText>
     <EnableCompatibilityModeTooltip>Enable ONVIF compatibility mode for buggy NVR/VMS clients</EnableCompatibilityModeTooltip>
     <EnableBuggyVmsTricksText>SOAP tricks</EnableBuggyVmsTricksText>
-    <EnableBuggyVmsTricksTooltip>Enable special tricks to ensure compatibility with exacqVision, Avigilon VMS and Milestone XProtect</EnableBuggyVmsTricksTooltip>
+    <EnableBuggyVmsTricksTooltip>Enable special tricks to ensure compatibility with exacqVision, Avigilon VMS, Dahua and Milestone XProtect</EnableBuggyVmsTricksTooltip>
 
     <AllowMFSoftwareEncoderText>Allow MF SW encoder</AllowMFSoftwareEncoderText>
     <AllowMFSoftwareEncoderTooltip>Allow MF fallback to SW encoder (not recommended)</AllowMFSoftwareEncoderTooltip>
@@ -68,10 +77,26 @@
     <IsCtrlAltDEnabledText>Enable Ctrl+Alt+d hotkey</IsCtrlAltDEnabledText>
     <IsCtrlAltDEnabledTooltip>Display application window when Ctrl+Alt+d hotkey pressed</IsCtrlAltDEnabledTooltip>
 
+    <AudioUseWasapiText>Use WASAPI</AudioUseWasapiText>
+    <AudioUseWasapiTooltip>Use Windows Audio Session API (WASAPI) for audio</AudioUseWasapiTooltip>
+
+    <RtspUrlNamingForScreenText>Screens RTSP url</RtspUrlNamingForScreenText>
+    <RtspUrlNamingForScreenTooltip>The way how software names RTSP urls for Screen sources</RtspUrlNamingForScreenTooltip>
+
+    <RtspUrlNamingForWebcamText>Webcams RTSP url</RtspUrlNamingForWebcamText>
+    <RtspUrlNamingForWebcamTooltip>The way how software names RTSP urls for Webcam sources</RtspUrlNamingForWebcamTooltip>
+
+    <AudioNoiseSuppressionText>Noise Suppression</AudioNoiseSuppressionText>
+    <AudioNoiseSuppressionTooltip>Remove noise from audio streams</AudioNoiseSuppressionTooltip>
+
+    <AllowAutoUpdatesCheckText>Auto check updates</AllowAutoUpdatesCheckText>
+    <AllowAutoUpdatesCheckTooltip>Automatically check for updates</AllowAutoUpdatesCheckTooltip>
+    <CheckForUpdatesText>Check for updates</CheckForUpdatesText>
+    <CheckForUpdatesTooltip>Check for updates</CheckForUpdatesTooltip>
 
   </Options>
   <CameraSettings>
-    <Name>카메라 설정</Name>
+    <Name>Camera Settings</Name>
     <IpAddressText>IP Address</IpAddressText>
     <IpAddressTooltip>IP Address</IpAddressTooltip>
     <UsePort80Text>Use port 80</UsePort80Text>
@@ -91,10 +116,10 @@
     <StopText>Stop</StopText>
     <StopTooltip>Stop Camera</StopTooltip>
     <StartedCamerasText>Started Cameras</StartedCamerasText>
-    <NameColumnText>카메라명</NameColumnText>
-    <PortColumnText>포트</PortColumnText>
-    <VideoSourcesColumnText>비디오명</VideoSourcesColumnText>
-    <InfoColumnText>정보</InfoColumnText>
+    <NameColumnText>Name</NameColumnText>
+    <PortColumnText>Port</PortColumnText>
+    <VideoSourcesColumnText>Video Sources</VideoSourcesColumnText>
+    <InfoColumnText>Info</InfoColumnText>
     <OnlineText>Online</OnlineText>
     <OfflineText>Offline</OfflineText>
     <DetailsButtonTooltip>Camera Details</DetailsButtonTooltip>
@@ -110,10 +135,17 @@
     <RdpSafeDisconnectTooltip>Disconnect the current RDP session and keep live streaming</RdpSafeDisconnectTooltip>
 
 
+    <AddressColumnText>Camera Address</AddressColumnText>
+    <LocalAddressText>LAN:</LocalAddressText>
+    <LocalAddressTooltip>Local address of the IP Camera</LocalAddressTooltip>
+    <ExternalAddressText>WAN:</ExternalAddressText>
+    <ExternalAddressTooltip>External address of the IP Camera. Use it for the connecting outside the local network</ExternalAddressTooltip>
+    <ConfigureExternalAddressText>configure</ConfigureExternalAddressText>
+    <ConfigureExternalAddressTooltip>Configure external address and port forwarding</ConfigureExternalAddressTooltip>
 
   </CameraSettings>
   <VideoAudioSettings>
-    <Name>비디오 및 오디오 설정</Name>
+    <Name>Video &amp; Audio Settings</Name>
     <VideoAudioSettingsText>Video &amp; Audio Settings</VideoAudioSettingsText>
     <StopCameraWarningText>Stop the camera before editing Video &amp; Audio settings</StopCameraWarningText>
     <TypePropertyText>Type:</TypePropertyText>
@@ -186,12 +218,12 @@
     <EncTooltip>Encoding of the external Media Source video stream</EncTooltip>
 
     <EnableRtcpText>RTCP</EnableRtcpText>
-    <EnableRtcpToolTip>Enable RTCP packets, disable it for old incompatible RTSP servers</EnableRtcpToolTip>
+    <EnableRtcpToolTip>Use RTCP packets, disable it if the stream periodically disconnects</EnableRtcpToolTip>
     <EnableKeepAliveText>KeepAlive</EnableKeepAliveText>
     <EnableKeepAliveToolTip>Enable RTSP keep alive packets, disable it for old incompatible RTSP servers</EnableKeepAliveToolTip>
 
-    <ResolutionText>Resolution</ResolutionText>
-    <ResolutionTooltip>Resolution of the external Media Source video stream</ResolutionTooltip>
+    <ResolutionText>Resolut/Fps</ResolutionText>
+    <ResolutionTooltip>Resolution and FPS of the external Media Source video stream</ResolutionTooltip>
     <UseMultipartdemuxText>Multipartdemux</UseMultipartdemuxText>
     <UseMultipartdemuxTooltip>Use Multipartdemux</UseMultipartdemuxTooltip>
 
@@ -240,10 +272,18 @@
     <PicPositionTooltip>Select the position of the overlay media</PicPositionTooltip>
     <PicSizeText>Size %</PicSizeText>
     <PicSizeTooltip>Specify the Size of the overlay media</PicSizeTooltip>
+    <WallResolutionText>Resolution</WallResolutionText>
+    <WallResolutionTooltip>Desired resolution of the Wall media</WallResolutionTooltip>
+    <WallMaxFpsText>Max Fps</WallMaxFpsText>
+    <WallMaxFpsTooltip>Maximum possible FPS. Depends on the Wall Resolution and attached Video Sources capabilities</WallMaxFpsTooltip>
+
+    <AudioSourceText>Audio</AudioSourceText>
+    <AudioSourceTooltip>Select Audio input source</AudioSourceTooltip>
+
 
   </AddCustomInputSource>
   <AppPassword>
-    <Name>앱 잠금</Name>
+    <Name>App Password</Name>
     <NewPasswordText>New</NewPasswordText>
     <NewPasswordTooltip>New Password</NewPasswordTooltip>
     <ConfirmNewPasswordText>Confirm new</ConfirmNewPasswordText>
@@ -254,14 +294,14 @@
     <ApplyTooltip>Apply new password</ApplyTooltip>
   </AppPassword>
   <LicenseInformation>
-    <Name>라이선스 정보</Name>
-    <LicenseText>라이선스:</LicenseText>
+    <Name>License information</Name>
+    <LicenseText>License:</LicenseText>
     <TrialText>Trial</TrialText>
     <CommercialText>Commercial</CommercialText>
     <LicenseSerialTooltip>Serial number</LicenseSerialTooltip>
     <LicensePeriodText>License period:</LicensePeriodText>
     <DaysText>Days</DaysText>
-    <ActivationText>활성화:</ActivationText>
+    <ActivationText>Activation:</ActivationText>
     <RequiredText>Required</RequiredText>
     <RequiredTooltip>The license must be activated</RequiredTooltip>
     <CompletedText>Completed</CompletedText>
@@ -294,15 +334,29 @@
     <LicenseServerUrlTooltip>Specify Local License server URL (E.g http://192.168.1.2:8088 )</LicenseServerUrlTooltip>
     <CancelImportButtonText>Cancel</CancelImportButtonText>
     <CancelImportButtonTooltip>Cancel</CancelImportButtonTooltip>
-    <WaitingForLicenseServerText>Waiting for a License server..</WaitingForLicenseServerText>
+    <WaitingForLicenseServerText>Waiting for a server..</WaitingForLicenseServerText>
     <LicenseServerConnectionErrorText>Connection error, reconnecting...</LicenseServerConnectionErrorText>
-    <LicenseServerPendingText>Connected. Pending license assignment</LicenseServerPendingText>
+    <LicenseServerPendingText>Connected. Pending license assignment...</LicenseServerPendingText>
+
+    <PerpetualLicenseText>Perpetual</PerpetualLicenseText>
+    <SubscriptionLicenseText>Subscription</SubscriptionLicenseText>
+    <SubscriptionSerialText>Serial number</SubscriptionSerialText>
+    <SubscriptionSerialTooltip>Subscription Serial number</SubscriptionSerialTooltip>
+    <SubscriptionSecretKeyText>Secret Key</SubscriptionSecretKeyText>
+    <SubscriptionSecretKeyTooltip>Subscription Secret Key</SubscriptionSecretKeyTooltip>
+
+    <LocalSubscriptionServerText>Use Local subscription server</LocalSubscriptionServerText>
+    <LocalSubscriptionServerTooltip>Connect to a subscription server in the local network</LocalSubscriptionServerTooltip>
+    <SubscriptionText>Subscription</SubscriptionText>
+    <SubscriptionDaysText>until cancelled</SubscriptionDaysText>
+    <SubscriptionServerErrorText>Error reserving a seat, trying again...</SubscriptionServerErrorText>
+
   </LicenseInformation>
   <About>
     <Name>About</Name>
     <VersionText>Version</VersionText>
-    <WebsiteLink>https://www.pccam.site</WebsiteLink>
-    <ThirdPartySoftwareText>*PCCAM includes computer software supplied by third-parties.</ThirdPartySoftwareText>
+    <WebsiteLink>https://www.deskcamera.com</WebsiteLink>
+    <ThirdPartySoftwareText>*DeskCamera includes computer software supplied by third-parties.</ThirdPartySoftwareText>
     <DetailsText>For details check</DetailsText>
   </About>
   <Unblock>
@@ -316,8 +370,8 @@
     <HeaderText>Streams</HeaderText>
     <VideoSourceTypeText>Video source</VideoSourceTypeText>
     <VideoSourceTypeTooltip>Type of Video source</VideoSourceTypeTooltip>
-    <VideoSourceOriginalResolutionText>Source resolution</VideoSourceOriginalResolutionText>
-    <VideoSourceOriginalResolutionTooltip>Original resolution of Video Source</VideoSourceOriginalResolutionTooltip>
+    <VideoSourceOriginalResolutionText>Source mode</VideoSourceOriginalResolutionText>
+    <VideoSourceOriginalResolutionTooltip>Connection mode to the Video Source</VideoSourceOriginalResolutionTooltip>
     <VideoSourceRotationText>Rotate</VideoSourceRotationText>
     <VideoSourceRotationTooltip>Rotation configuration</VideoSourceRotationTooltip>
     <AudioSourceText>Audio source</AudioSourceText>
@@ -360,6 +414,8 @@
 
     <SlowStreamTooltip>Low performance stream</SlowStreamTooltip>
 
+    <NoTranscodingTooltip>Native stream from the source (not transcoded)</NoTranscodingTooltip>
+
     <NotStartedStream>Streaming was not started</NotStartedStream>
 
     <PreviewButtonText>Preview</PreviewButtonText>
@@ -398,6 +454,8 @@
     <NoVideoNoAudioSourcesText>There are no assigned Video or Audio sources</NoVideoNoAudioSourcesText>
     <TooHighFpsTooltip>FPS value too high. Current environment may not support this FPS rate (please test before use)</TooHighFpsTooltip>
 
+    <WebcamCaptureModeText>Capture Mode</WebcamCaptureModeText>
+    <WebcamCaptureModeTooltip>The Connection Mode to the source device</WebcamCaptureModeTooltip>
 
   </ConfigureController>
   <ConfigureOverlay>
@@ -440,9 +498,62 @@
     <VideoSourceTokenText>API token</VideoSourceTokenText>
     <VideoSourceTokenTooltip>Token parameter, needed for the API call</VideoSourceTokenTooltip>
   </ConfigureMotion>
+
+  <PortForwarding>
+    <Name>Configure external access</Name>
+    <EnableExternalAccessText>Enable external access to the camera(s)</EnableExternalAccessText>
+    <EnableExternalAccessTooltip>Enable access from the Internet</EnableExternalAccessTooltip>
+    <PortForwardingTypeText>Port forwarding</PortForwardingTypeText>
+    <PortForwardingTypeTooltip>Select the way how port forwarding rules should be created</PortForwardingTypeTooltip>
+    <UpnpPortForwardingTypeText>Automatic with UPnP</UpnpPortForwardingTypeText>
+    <UpnpPortForwardingTypeTooltip>Use UPnP to create port mapping automatically</UpnpPortForwardingTypeTooltip>
+    <ManualPortForwardingTypeText>Manual rules in router</ManualPortForwardingTypeText>
+    <ManualPortForwardingTypeTooltip>Please manually create port forwarding rules in your router</ManualPortForwardingTypeTooltip>
+    <ManualPortForwardingTypeTip>Port forwarding rules should be manually created in the router</ManualPortForwardingTypeTip>
+    <UpnpRouterText>UPnP router</UpnpRouterText>
+    <UpnpRouterTooltip>Detected router with UPnP</UpnpRouterTooltip>
+    <RefreshButtonTooltip>Refresh</RefreshButtonTooltip>
+    <ExternalIpText>External IP</ExternalIpText>
+    <ExternalIpTooltip>External IP address</ExternalIpTooltip>
+    <AutoExternalIpText>Auto</AutoExternalIpText>
+    <AutoExternalIpTooltip>Get public IP address automatically</AutoExternalIpTooltip>
+    <ManualExternalIpText>Manual</ManualExternalIpText>
+    <ManualExternalIpTooltip>Enter public IP address manually</ManualExternalIpTooltip>
+
+    <PortTypeColumnText>Purpose</PortTypeColumnText>
+    <InternalPortColumnText>Internal Port</InternalPortColumnText>
+    <ExternalPortColumnText>External Port</ExternalPortColumnText>
+    <UPnPCheckColumnText>UPnP check</UPnPCheckColumnText>
+    <PortOpenCheckColumnText>Port open check</PortOpenCheckColumnText>
+
+    <ApplySettingsButtonText>Apply  &amp;  Validate</ApplySettingsButtonText>
+    <ApplySettingsButtonTooltip>Apply and Validate configuration</ApplySettingsButtonTooltip>
+    <ValidateSettingsButtonText>Validate</ValidateSettingsButtonText>
+    <ValidateSettingsButtonTooltip>Validate current configuration</ValidateSettingsButtonTooltip>
+
+    <PortStatusUnknownTooltip>Port status is Unknown</PortStatusUnknownTooltip>
+    <PortStatusOpenTooltip>Port is Open. External access is available</PortStatusOpenTooltip>
+    <PortStatusClosedTooltip>Port is Closed. External access might not work</PortStatusClosedTooltip>
+    <PortUpnpStatusOpenTooltip>Port forwarding rule is successfully created</PortUpnpStatusOpenTooltip>
+    <PortUpnpStatusClosedTooltip>Failed to create port forwarding rule</PortUpnpStatusClosedTooltip>
+    <UpnpRouterNotFoundText>&lt; not found &gt;</UpnpRouterNotFoundText>
+
+  </PortForwarding>
+
+  <AppUpdating>
+    <NewVersionIsReadyText>New version available</NewVersionIsReadyText>
+    <NewVersionIsReadyTooltip>Click for details</NewVersionIsReadyTooltip>
+    <ConfirmInstallingUpdateText>Start automatic update to the latest version ?</ConfirmInstallingUpdateText>
+    <ReleaseNotesUrlText>Release notes</ReleaseNotesUrlText>
+    <InstallingUpdateText>Updating</InstallingUpdateText>
+    <InstallingUpdateTooltip>Installing a new version. The application will restart after installation</InstallingUpdateTooltip>
+    <ConfirmCancelInstallingUpdateText>Cancel automatic update?</ConfirmCancelInstallingUpdateText>
+
+  </AppUpdating>
+
   <Messages>
     <CantStartCamera>Cannot start camera. Check log file for more details</CantStartCamera>
-    <CriticalError>PCCAM encountered a critical exception. Please restart the application. We are sorry for the inconvenience</CriticalError>
+    <CriticalError>DeskCamera encountered a critical exception. Please restart the application. We are sorry for the inconvenience</CriticalError>
     <ConfirmActivation>Activation will tie the license to this PC. Continue?</ConfirmActivation>
     <ActivationCompleted>The license has been activated</ActivationCompleted>
     <NewPasswordNotConfirmed>New password and confirm password are not same</NewPasswordNotConfirmed>
@@ -471,6 +582,24 @@
     <ConfirmUsingH265>H265 stream would not work with ONVIF. Use H265 only for direct RTSP connections. Continue?</ConfirmUsingH265>
 
     <AudioCpuUsageWarning>Using Audio might noticeable increase CPU usage. Test before applying</AudioCpuUsageWarning>
+
+    <SubscriptionNotActive>This Subscription is not active</SubscriptionNotActive>
+    <DeviceLimitReached>Device limit reached. Increase Subscription capacity or disconnect an other device</DeviceLimitReached>
+    <UpnpDiscoveryError><![CDATA[UPnP-enabled router not found. Common reasons:
+    -No device is present
+    -Upnp is disabled in the router
+    -Antivirus software is filtering SSDP (discovery protocol)
+    -Network adapters conflict (disable all other network adapters and try again)]]></UpnpDiscoveryError>
+
+    <UpnpGetExternalIpError>Can't receive External IP address from UPnP router</UpnpGetExternalIpError>
+
+    <GetExternalIpError>Can't retrieve Public IP address. Please check your Internet connection and try again</GetExternalIpError>
+
+    <CantApplyPortForwardingError>There was an error applying port forwarding settings</CantApplyPortForwardingError>
+
+    <UpnpCantCreateOrValidateError>There was an error creating UPnP dynamic port mappings</UpnpCantCreateOrValidateError>
+
+    <CantValidateOpenPortError>There was an error validating if ports are open</CantValidateOpenPortError>
 
   </Messages>
 </AppTheme>
